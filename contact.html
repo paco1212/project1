@@ -1,17 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Francisco Gallardo</title>
-</head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="blog_home.html">Blog<a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <img src="images/logo.png" alt="Francisco Gallardo's Logo">
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Francisco Gallardo</title>
+    </head>
+
+    <!-- Beginning of Body -->
+    <body>
+
+        <!-- Beginning of Navigation Bar -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="blog_home.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <!-- End of Navigation Bar -->
+
+        <!-- Image of my logo -->
+        <img src="images/logo.png" alt="Francisco Gallardo's Logo">
+
+        <!-- Link to my LinkedIn -->
+        <p>Be sure to follow me on <a href="http://www.linkedin.com/pub/francisco-gallardo/a5/230/312/">LinkedIn</a> as well</p> 
+
+        <!-- Beginning of HTML Form to contact me -->
+        <form method="GET" action="contact.html" id="contactform">
+
+            <!-- Creating a seperate section for my contact form -->
+            <fieldset>
+
+
+                <!-- Name of my contact form -->
+                <legend>Contact Me</legend>
+
+
+                <!-- First Name -->
+                <div class="firstname" title="First name of Contact Form">
+                    First Name: <input type="text" name="first_name" value="">
+                </div>
+
+                <!-- Last Name -->
+                <div class="lastname" title="Last name of contact form">
+                        Last Name: <input type="text" name="lastname" value="">
+                </div>  
+
+                <!-- Email -->
+                <div class="email" title="Email of contact form">
+                    Email: <input type="text" name="useremail" value="email@example.com">
+                </div>
+
+                <!-- subject -->
+                <div class="email_subject" title="Subject of email">
+                    Subject: <input type="text" name="email_subject" value="">                
+                </div>
+
+                <!-- Body -->
+                <div class="emailbody" title="Body of Email">
+                    <textarea rows="4" cols="100" name="messagebody" form="contactform">Enter text here.</textarea>
+                </div>
+
+                <!-- Submit button -->
+                <div class="submitfield" title="Submit Button">
+                    <input type="submit" value="Sumbit">
+                </div>
+
+            </fieldset>
+            <!-- End of contact form FIELD -->
+
+        </form>
+        <!-- End of HTML contact form -->
+
+    </body>
+    <!-- End of Body -->
+
 </html>
