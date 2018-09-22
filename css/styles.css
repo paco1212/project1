@@ -1,6 +1,6 @@
 .Logo{
-    width: 100px;
-    height:150px;
+    width: 204px;
+    height:204px;
 }
 
 .project1pic {
@@ -11,4 +11,51 @@
 .headshot {
     width:270px;
     height:350px;
+}
+
+.vr_pic {
+    width:300px;
+}
+
+.form_contact {
+    width:50%;
+}
+
+.design1link {
+    background-color: rgba(13, 94, 253, 1);
+    color: rgba(255,167, 0, 1); 
+    padding:10px;
+    
+}
+
+/* Styling my nav bar
+    added a transition so that the background changes color when you hover over it */
+nav a {
+    width: 60px;
+    text-align: center;
+    background-color: rgba(0, 253, 234, 1);
+    color: rgba(13, 94, 253, 1);
+    text-decoration: none;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(255,255,255,1);
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    transition-property: color;
+    transition-duration: .001s;
+    transition-timing-function: linear;
+    transition-delay: 0.1s;
+}
+/* When I hover over any of my nav bar links, change the background color to orange with a 0.3 opacity */
+nav a:hover {
+    background-color: rgba(255,167, 0, 1);
+    
+}
+
+.coming_soon {
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    font-size: 50px;
 }
