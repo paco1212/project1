@@ -59,3 +59,15 @@ nav a:hover {
     text-align: center;
     font-size: 50px;
 }
+
+.form_contact {
+    width: 400px;
+}
+
+.pacoportrait{
+    height: 400px;
+    width: 300px;
+    border-style: solid;
+    border-width: 1px;
+    
+}
