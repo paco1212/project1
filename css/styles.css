@@ -184,9 +184,9 @@ nav a:hover {
     width: 75%;
 }
 
-/* .flex-contact-item {
-    align-content: center;
-} */
+ .flex-contact-item {
+    width:50%;
+} 
 .flex-contact-item img {
     align-self: flex-end;
     width: 90%
