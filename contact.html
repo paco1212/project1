@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="css/styles.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
         <link rel="shortcut icon" href="images/nl_color2.png"/>
         <title>Francisco Gallardo</title>
     </head>
@@ -13,68 +14,94 @@
     <!-- Beginning of Body -->
     <body>
 
-        <!-- Beginning of Navigation Bar -->
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="blog_home.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <!-- Beginning of navigation bar -->
+        <div class="flex-container-nav">
+
+            <!-- My Logo -->
+            <!-- NEED HELP HERE -->
+            <div class="flex-logo">
+                <a href="index.html" aria-label="Link to Home page"><img src="images/nl_color2.png" alt="Francisco Gallardo's Logo, which is an F and a G." class="nav-logo"></a>
+            </div>
+    
+            <div class="flex-navigation">
+                <nav>
+                    <a href="index.html" class="flex-nav-link" aria-label="Link to home page">Home</a>
+                    <a href="projects.html" class="flex-nav-link" aria-label="Link to Projects page">Projects</a>
+                    <a href="blog_home.html" class="flex-nav-link" aria-label="link to Blog page">Blog</a>
+                    <a href="contact.html" class="flex-nav-link" aria-label="Link to contact page">Contact</a>
+                </nav>
+            </div>
+        </div>
         <!-- End of Navigation Bar -->
-
-        <!-- Image of my logo -->
-        <img src="images/nl_color2.png" alt="Francisco Gallardo's Logo, which is an F and a G." class="Logo">
-
+    
         <!-- Link to my LinkedIn -->
-        <p>Be sure to follow me on <a href="http://www.linkedin.com/pub/francisco-gallardo/a5/230/312/">LinkedIn</a> as well</p> 
+        <p>Be sure to follow me on <a href="http://www.linkedin.com/pub/francisco-gallardo/a5/230/312/"><i class="fab fa-linkedin fa-2x" aria-label="Icon of LinkedIn"></i></a> as well</p>  
 
-        <!-- Beginning of HTML Form to contact me -->
-        <form method="GET" action="contact.html" id="contactform">
+        <div class="flex-container-contact">
+            <!-- Beginning of HTML Form to contact me -->
+            <div class="flex-contact-item">
+                <form method="GET" action="contact.html" id="contactform">
 
-            <!-- Creating a seperate section for my contact form -->
-            <fieldset class="form_contact">
-
-
-                <!-- Name of my contact form -->
-                <legend>Contact Me</legend>
-
-
-                <!-- First Name -->
-                <div class="firstname" title="First name of Contact Form">
-                    First Name: <input type="text" name="first_name" value="">
-                </div>
-
-                <!-- Last Name -->
-                <div class="lastname" title="Last name of contact form">
-                        Last Name: <input type="text" name="lastname" value="">
-                </div>  
-
-                <!-- Email -->
-                <div class="email" title="Email of contact form">
-                    Email: <input type="text" name="useremail" value="email@example.com">
-                </div>
-
-                <!-- subject -->
-                <div class="email_subject" title="Subject of email">
-                    Subject: <input type="text" name="email_subject" value="">                
-                </div>
-
-                <!-- Body -->
-                <div class="emailbody" title="Body of Email">
-                    <textarea rows="4" cols="100" name="messagebody" form="contactform">Enter text here.</textarea>
-                </div>
-
-                <!-- Submit button -->
-                <div class="submitfield" title="Submit Button">
-                    <input type="submit" value="Sumbit">
-                </div>
-
-            </fieldset>
-            <!-- End of contact form FIELD -->
-
-        </form>
+                    <!-- Creating a seperate section for my contact form -->
+                    <fieldset class="form_contact">
+        
+        
+                        <!-- Name of my contact form -->
+                        <legend>Contact Me</legend>
+        
+        
+                        <!-- First Name -->
+                        <div class="firstname" title="First name of Contact Form">
+                            <label for="firstname">First Name: </label><input type="text" name="first_name" value="" id="firstname">
+                        </div>
+        
+                        <!-- Last Name -->
+                        <div class="lastname" title="Last name of contact form">
+                                <label for="lastname">Last Name: </label>
+                                <input type="text" name="lastname" value="" id="lastname">
+                        </div>  
+        
+                        <!-- Email -->
+                        <div class="email" title="Email of contact form">
+                            <label for="useremail">Email: </label>
+                            <input type="text" name="useremail" value="email@example.com" id="useremail">
+                        </div>
+        
+                        <!-- subject -->
+                        <div class="email_subject" title="Subject of email">
+                            <label for="email-subject">Subject: </label>
+                            <input type="text" name="email_subject" value="" id="email-subject">                
+                        </div>
+        
+                        <!-- Body -->
+                        <div class="emailbody" title="Body of Email">
+                            <label for="email-text">
+                                <textarea rows="4" cols="100" name="messagebody" form="contactform" id="email-text">Enter text here.</textarea>
+                            </label>
+                            
+                        </div>
+        
+                        <!-- Submit button -->
+                        <div class="submitfield" title="Submit Button">
+                            <input type="submit" value="Sumbit">
+                        </div>
             
-        <img src="images/pacoportrait.jpeg" alt="Graphic design rendering of Francisco Gallardo." class="pacoportrait">
+                    </fieldset>
+                    <!-- End of contact form FIELD -->
+                </form>
+
+            </div>
+            <div class="flex-contact-item">
+                <img src="images/pacoportrait.jpeg" alt="Graphic design rendering of Francisco Gallardo." class="pacoportrait">
+            </div>
+
+
+
+        </div>
+        
+
+        
+            
 
 
     </body>

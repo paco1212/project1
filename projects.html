@@ -6,28 +6,47 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My Projects</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link rel = "shortcut icon" href="images/nl_color2.png">
 </head>
 <body>
-     <!-- Beginning of navigation bar -->
-     <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="blog_home.html">Blog</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-        <!-- End of navigation bat -->
-    
-        <!-- My logo -->
-        <img src="images/nl_color2.png" alt="Francisco Gallardo's Logo" class="Logo">
+    <!-- Beginning of navigation bar -->
+    <div class="flex-container-nav">
 
-        <h2><a href="page1.html">College Access</a></h2>
-        <span>
-            <a href="page1.html"><img src="images/College_hub_Prototype.png" alt="Picture of UX design project that Francisco has worked on in the past." class="project1pic"></a>
-        </span>
-        <span class="coming_soon">
-            <em>More content to come soon.</em>
-        </span>
-    
+        <!-- My Logo -->
+        <!-- NEED HELP HERE -->
+        <div class="flex-logo">
+            <a href="index.html" aria-label="Link to Home page"><img src="images/nl_color2.png" alt="Francisco Gallardo's Logo, which is an F and a G." class="nav-logo"></a>
+        </div>
+
+        <div class="flex-navigation">
+            <nav>
+                <a href="index.html" class="flex-nav-link" aria-label="Link to home page">Home</a>
+                <a href="projects.html" class="flex-nav-link" aria-label="Link to Projects page">Projects</a>
+                <a href="blog_home.html" class="flex-nav-link" aria-label="link to Blog page">Blog</a>
+                <a href="contact.html" class="flex-nav-link" aria-label="Link to contact page">Contact</a>
+            </nav>
+        </div>
+    </div>
+        
+    <div class="Section Title">
+        <h1>My Previous Projects</h1>
+    </div>
+
+    <div class="flex-container-projects">
+
+        <div class="flex-project-items"> 
+            <h2><a href="page1.html">College Access Portal for High School Seniors</a></h2>
+
+            <div>
+                <a href="page1.html"><img src="images/College_hub_Prototype.png" alt="Picture of UX design project that Francisco has worked on in the past." class="project1pic"></a>
+            </div>
+        </div>
+    </div>
+
+    <span class="coming_soon">
+        <em>More content to come soon.</em>
+    </span>
+
 </body>
 </html>

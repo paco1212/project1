@@ -1,44 +1,16 @@
-.Logo{
-    width: 204px;
-    height:204px;
+body {
+    background-color: #E0E4CC;
 }
 
-.project1pic {
-    width: 500px;
-    height: 400px;
-}
+/* CSS for Navigation Bar */
 
-.headshot {
-    width:270px;
-    height:350px;
-}
-
-.vr_pic {
-    width:300px;
-}
-
-.form_contact {
-    width:50%;
-}
-
-.design1link {
-    background-color: rgba(13, 94, 253, 1);
-    color: rgba(255,167, 0, 1); 
-    padding:10px;
-    
-}
-
-/* Styling my nav bar
-    added a transition so that the background changes color when you hover over it */
+/* Styling my nav bar added a transition so that the background changes color when you hover over it */
 nav a {
     width: 60px;
     text-align: center;
     background-color: rgba(0, 253, 234, 1);
     color: rgba(13, 94, 253, 1);
     text-decoration: none;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgba(255,255,255,1);
     padding: 10px;
     margin: 5px;
     display: inline-block;
@@ -50,9 +22,139 @@ nav a {
 /* When I hover over any of my nav bar links, change the background color to orange with a 0.3 opacity */
 nav a:hover {
     background-color: rgba(255,167, 0, 1);
-    
 }
 
+/* Container for Navigation bar at top of page */
+.flex-container-nav {
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+    height: 15%;
+    align-items: center;
+    align-content: space-around;
+    flex-wrap: nowrap;
+    background-color:rgba(255,255, 255, 1);
+    border-bottom: 2px dashed rgba(13, 94, 253, 1);
+    padding: 2px;
+}
+/* Flex item of flex-container-nav, it is my logo */
+/* .flex-logo {
+    height: 10vh; 
+} */
+
+.nav-logo {
+    height:100px;
+}
+
+/*************************************/
+/* CSS for Index page */
+.headshot {
+    width:100%;
+    margin:5px;
+    border-radius: 25px 50px;
+    border: 1px transparent;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.flex-container-intro {
+    display: flex;
+    background-image: url("../images/UX_icons.jpg");
+    background-size: cover;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+}
+
+.flex-intro-item {
+    align-self: center;
+    flex-grow: inherit;
+    background-color: #ffffff;
+    border-radius:25px;
+    width: 60%;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+.intro-text{
+    color:#0D5EFD;
+    text-align: center;
+}
+
+.flex-headshot-item {
+    /* add here */
+}
+
+.flex-container-recentproj {
+    display:flex;
+    width:100%;
+    height: 10vh;
+    /* align-content: center; */
+    /* border: 2px solid; */
+    border-top: 1px solid grey;
+}
+
+.flex-header-item {
+    text-align: justify;
+    align-self: center;
+}
+
+.firstproject-item {
+    display:flex block;
+    text-align: justify;
+    margin: 10px;
+}
+
+.flex-container-firstproject {
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: flex-start; */
+}
+
+.flex-project-item{
+    width:50%;
+    height: 50%;
+    display: inline-block;
+    align-self: auto;
+}
+.proj {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #eaeaea;
+}
+
+.flex-project-item p {
+    width: 80%;
+    /* display: inline-block; */
+    margin: 4%;
+}
+
+/* span .flex-project-item{
+    align-self: auto;
+} */
+
+.design1link {
+    background-color: rgba(13, 94, 253, 1);
+    color: rgba(255,167, 0, 1); 
+    padding:10px;
+    /* width:50%; */
+    text-align: center;
+    margin: 4%;
+    /* align-self: flex-end; */
+    /* position: absolute;
+    right: 2vw; */
+}
+.project1pic {
+    width: 500px;
+    height: 400px;
+}
+
+/*************************************/
+/* CSS for Blog page */
+.vr_pic {
+    width:300px;
+}
 .coming_soon {
     width: 500px;
     height: 400px;
@@ -60,14 +162,40 @@ nav a:hover {
     font-size: 50px;
 }
 
+/*************************************/
+/* CSS for Contact page */
+
+
 .form_contact {
-    width: 400px;
+    width: 50%;
 }
 
 .pacoportrait{
-    height: 400px;
-    width: 300px;
+    /* height: 400px; */
+    width: 100%;
     border-style: solid;
     border-width: 1px;
     
 }
+
+.flex-container-contact {
+    display:flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+/* .flex-contact-item {
+    align-content: center;
+} */
+.flex-contact-item img {
+    align-self: flex-end;
+    width: 50%
+}
+
+/************************************/
+/* Projects Page CSS */
+.flex-container-projects {
+    display:flex;
+    
+}
+
