@@ -3,6 +3,11 @@ body {
 }
 
 /* CSS for Navigation Bar */
+.nav-bar {
+    justify-self: end;
+    /* border:1px solid black; */
+
+}
 
 /* Styling my nav bar added a transition so that the background changes color when you hover over it */
 nav a {
@@ -24,23 +29,23 @@ nav a:hover {
     background-color: rgba(255,167, 0, 1);
 }
 
-/* Container for Navigation bar at top of page */
-.flex-container-nav {
-    display:flex;
-    justify-content: space-around;
-    width:100%;
-    height: 15%;
-    align-items: center;
-    align-content: space-around;
-    flex-wrap: nowrap;
-    background-color:rgba(255,255, 255, 1);
-    border-bottom: 2px dashed rgba(13, 94, 253, 1);
-    padding: 2px;
+.active {
+    background-color:rgba(255, 167, 0, 1);
 }
-/* Flex item of flex-container-nav, it is my logo */
-/* .flex-logo {
-    height: 10vh; 
-} */
+
+/* CSS for Header portion */
+.header-wrapper {
+    display: grid;
+    width: 90%;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items:center;
+}
+/* CSS for logo in header */
+.header-logo img{
+    /*justify-self: start;*/
+    width:75px;
+}
 
 .nav-logo {
     height:100px;
@@ -86,6 +91,53 @@ nav a:hover {
     /* add here */
 }
 
+.recent-projects-title {
+    text-align: center;
+    font-size: 36px;
+}
+
+.recent-work-grid {
+    display:grid;
+    width: 75%;
+    /* margin: 0 auto; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 43vh);
+    grid-column-gap: 1em;
+    grid-row-gap: 1em; 
+    /* border:1px solid; */
+    /* align-self: center; */
+    margin: 0 auto;
+}
+
+.recent-proj1-container {
+    display: grid;
+    /* border:1px solid; */
+    grid-template-columns: repeat(8, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+}
+
+
+.recent-proj1-img-container {
+    grid-column: 1/9;
+}
+.recent-proj1-img-container img {
+    width:100%;
+}
+
+.recent-proj1-descrip {
+    /* border: 2px solid blue; */
+    align-self: start;
+}
+
+.recent-proj1-descrip h4 {
+    font-size: 24px;
+}
+
+.recent-proj1-descrip h5 {
+    font-size: 18px;
+}
+
+
 .flex-container-recentproj {
     display:flex;
     width:100%;
@@ -100,29 +152,7 @@ nav a:hover {
     align-self: center;
 }
 
-.firstproject-item {
-    display:flex block;
-    text-align: justify;
-    margin: 10px;
-}
 
-.flex-container-firstproject {
-    display: flex;
-    justify-content: flex-end;
-    /* align-items: flex-start; */
-}
-
-.flex-project-item{
-    width:50%;
-    height: 50%;
-    display: inline-block;
-    align-self: auto;
-}
-.proj {
-    border: 1px solid black;
-    padding: 10px;
-    background-color: #eaeaea;
-}
 
 .flex-project-item p {
     width: 80%;
@@ -198,4 +228,102 @@ nav a:hover {
     display:flex;
     
 }
+/* ENTR390 Page CSS */
+.entr390-container {
+    /* background-color: #0D5EFD; */
+}
 
+.entr390-article{
+    border:2px solid black;
+    width:90vw;
+    margin:0 auto;
+}
+.article-header {
+    display:grid;
+    grid-template-rows: repeat(4, 50px);
+    /* justify-content: center; */
+    grid-row-gap: 1em;
+    align-items: baseline
+}
+
+.article-intro {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    justify-items: stretch;
+    grid-column-gap: 1em;
+    background-color: rgba(0, 253, 234, 0.2);
+}
+
+.article-intro > div {
+    box-sizing: border-box;
+    align-self: center;
+}
+
+.article-intro > div > h3 {
+    text-align: center;
+}
+.article-intro > div > p {
+    text-align: center;
+}
+
+
+
+.recent-proj2-container {
+    display: grid;
+ 
+
+}
+.recent-proj2-img-container {
+    grid-column: 1/9;
+    background-color: rgba(107, 107, 107, 1);
+}
+.recent-proj2-img {
+    width:70%;
+    margin:0 auto;
+
+}
+
+.design1link {
+    background-color: rgba(13, 94, 253, 1);
+    color: rgba(255,167, 0, 1); 
+    padding:10px;
+    /* width:50%; */
+    text-align: center;
+    /* margin: 4%; */
+    /* align-self: flex-end; */
+    /* position: absolute;
+    right: 2vw; */
+}
+
+.recent-proj2-descrip h4 {
+    font-size: 24px;
+}
+
+.recent-proj2-descrip h5 {
+    font-size: 18px;
+}
+
+.contact-title {
+    text-align: center;
+    width:75%;
+    margin:0 auto;
+}
+
+.contact-icons{
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom:20px;
+}
+.contact-icons a {
+    color:rgba(13, 94, 253, 1));
+}
+
+.main-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+    width:90%;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    justify-content: space-evenly;
+}

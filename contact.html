@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-        <link rel="shortcut icon" href="images/nl_color2.png"/>
-        <title>Francisco Gallardo</title>
-    </head>
-
-    <!-- Beginning of Body -->
-    <body>
-
-        <!-- Beginning of navigation bar -->
-        <div class="flex-container-nav">
-
-            <!-- My Logo -->
-            <!-- NEED HELP HERE -->
-            <div class="flex-logo">
-                <a href="index.html" aria-label="Link to Home page"><img src="images/nl_color2.png" alt="Francisco Gallardo's Logo, which is an F and a G." class="nav-logo"></a>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Me | Francisco Gallardo</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="images/nl_color2.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     
-            <div class="flex-navigation">
-                <nav>
-                    <a href="index.html" class="flex-nav-link" aria-label="Link to home page">Home</a>
-                    <a href="projects.html" class="flex-nav-link" aria-label="Link to Projects page">Projects</a>
-                    <a href="blog_home.html" class="flex-nav-link" aria-label="link to Blog page">Blog</a>
-                    <a href="contact.html" class="flex-nav-link" aria-label="Link to contact page">Contact</a>
-                </nav>
-            </div>
+</head>
+<body>
+    <div class="header-wrapper">
+
+        <div class="header-logo">
+            <a href="index.html" aria-label="Link to home page">
+                <img src="images/nl_color2.png" alt="Logo of Francisco. Logo is an F flipped 180degree horizontally and a G.">
+            </a>
         </div>
-        <!-- End of Navigation Bar -->
-    
-        <!-- Link to my LinkedIn -->
-        <p>Be sure to follow me on <a href="http://www.linkedin.com/pub/francisco-gallardo/a5/230/312/"><i class="fab fa-linkedin fa-2x" aria-label="Icon of LinkedIn"></i></a> as well</p>  
 
-        <div class="flex-container-contact">
-            <!-- Beginning of HTML Form to contact me -->
-            <div class="flex-contact-item">
+        <div class="nav-bar">
+            <nav class="navigation">
+                <a href="index.html" class="flex-nav-link" aria-label="Link to home page">Home</a>
+                <a href="projects.html" class="flex-nav-link" aria-label="Link to Projects page">Projects</a>
+                <a href="blog_home.html" class="flex-nav-link" aria-label="link to Blog page">Blog</a>
+                <a href="contact.html" class="flex-nav-link active" aria-label="Link to contact page">Contact</a>
+            </nav>	
+        </div>
+    </div>
+    
+    <div class="spacer">
+    </div>
+    
+    <div class="spacer">
+    </div>
+    <span class="title-container">
+        
+    </span>
+    
+    <main>
+        <h1 class="contact-title">Contact Me</h1>
+
+        <div class="contact-icons">
+            <p class="contact-message">Be sure to be on the following platforms:</p>
+            <a href="http://www.linkedin.com/pub/francisco-gallardo/a5/230/312/" class="social-media-link" target="_blank" rel="noreferrer" aria-label="Link to LinkedIn account">
+                <i class="fab fa-linkedin fa-2x" aria-label="Icon of LinkedIn"> LinkedIn</i>
+            </a>
+            <br> 
+            <br>
+            <a href="https://github.com/paco1212" class="social-media-link" target="_blank" rel="noreferrer" aria-label="Link to GitHub account">
+                <i class="fab fa-github fa-2x"> GitHub</i>
+            </a>
+        </div>
+
+        <div class="main-grid">
+
+            <div class="contact-img-container">
+                    <img src="images/pacoportrait.jpeg" alt="#" class="contact-img">
+            </div>
+
+            <!-- Creating Contact Form -->
+            <div class="contact-form">
                 <form method="GET" action="contact.html" id="contactform">
 
                     <!-- Creating a seperate section for my contact form -->
                     <fieldset class="form_contact">
         
-        
                         <!-- Name of my contact form -->
-                        <legend>Contact Me</legend>
+                        <legend>Send me a message</legend> 
         
         
                         <!-- First Name -->
@@ -76,7 +97,7 @@
                         <!-- Body -->
                         <div class="emailbody" title="Body of Email">
                             <label for="email-text">
-                                <textarea rows="4" cols="100" name="messagebody" form="contactform" id="email-text">Enter text here.</textarea>
+                                <textarea rows="4" cols="75" name="messagebody" form="contactform" id="email-text">Enter text here.</textarea>
                             </label>
                             
                         </div>
@@ -86,25 +107,16 @@
                             <input type="submit" value="Sumbit">
                         </div>
             
-                    </fieldset>
+                    <!-- </fieldset> -->
                     <!-- End of contact form FIELD -->
                 </form>
-
             </div>
-            <div class="flex-contact-item">
-                <img src="images/pacoportrait.jpeg" alt="Graphic design rendering of Francisco Gallardo." class="pacoportrait">
-            </div>
-
-
-
         </div>
-        
+    </main>
 
-        
-            
+    
 
 
-    </body>
-    <!-- End of Body -->
-
+    
+</body>
 </html>

@@ -17,28 +17,28 @@
     </div>
 
     <!-- Beginning of navigation bar -->
-    <div class="flex-container-nav">
+    <div class="header-wrapper">
 
-        <!-- My Logo -->
-        <!-- NEED HELP HERE -->
-        <div class="flex-logo">
-            <a href="index.html" aria-label="Link to Home page"><img src="images/nl_color2.png" alt="Francisco Gallardo's Logo, which is an F and a G." class="nav-logo"></a>
-        </div>
+		<div class="header-logo">
+			<a href="index.html" aria-label="Link to home page">
+			<img src="images/nl_color2.png" alt="Logo of Francisco. Logo is an F flipped 180degree horizontally and a G.">
+			</a>
+		</div>
 
-        <div class="flex-navigation">
-            <nav>
-                <a href="index.html" class="flex-nav-link" aria-label="Link to home page">Home</a>
+		<div class="nav-bar">
+			<nav class="navigation">
+				<a href="index.html" class="flex-nav-link active" aria-label="Link to home page">Home</a>
                 <a href="projects.html" class="flex-nav-link" aria-label="Link to Projects page">Projects</a>
                 <a href="blog_home.html" class="flex-nav-link" aria-label="link to Blog page">Blog</a>
                 <a href="contact.html" class="flex-nav-link" aria-label="Link to contact page">Contact</a>
-            </nav>
-        </div>
-        
-    </div>
+			</nav>	
+		</div>
+	</div>
     <!-- End of navigation bar -->
 
 
-    <div class="flex-container-intro">
+    <!-- Start of Intro -->
+	<div class="flex-container-intro">
 
         <!-- My headshot -->
         <div class="flex-headshot-item">
@@ -46,36 +46,72 @@
         </div>
     
         <!-- My inroduction of who I am and Link to resume(which is still missing) -->
-        <div class="flex-intro-item" title="Who I am">
+        <div class="flex-intro-item bg" title="Who I am">
 
             <div class="intro">
                 <h1 class="intro-text">Hi, I'm Francisco Gallardo, but my preferred name is Paco.</h1>
                 <h2 class="intro-text">I am a rising UX Design and Researcher.</h2>
             </div>
-
-    
         </div>
-        <!-- End of introduction -->
-    </div>
+        
+	</div>
+	<!-- End of introduction -->
 
-    <div class="flex-container-recentproj">
-        <h2 class="flex-header-item"> Recent Projects</h2>
-    </div>
+    <div class="wrapper-recent-proj">
+		<div class="recent-proj">
+			<a href="#Recent-Projects">Recent Projects</a>
+		</div>
+	</div>
+	<div class="spacer2">
+	</div>
 
-    <!-- Beginning of my first project -->
-    <h3 class="firstproject-item">College Access Hub Project</h3>
-    <div class="flex-container-firstproject" title="My First Design Project">
+	<!-- Beginning of my first project -->
+	<h3 class="recent-projects-title" id="Recent-Projects">Recent Projects</h3>
 
-        <img src="images/College_hub_Prototype.png" alt="Picture of UX design project that Francisco has worked on in the past." class="flex-project-item proj">
+	<div class="recent-work-grid">
+		<div class="recent-proj1-container">
 
-        <div class="flex-project-item">
-            <p>During my time at Fjord, part of Accenture Interactive, I designed a prototype of a college-access portal for college-bound individuals.</p>
+			<div class="recent-proj1-img-container">
+				<a href="page1.html" aria-label="Link to read more about the College Access Hub Project">
+					<img src="images/College_hub_Prototype.png" alt="Picture of UX design project that Francisco has worked on in the past." class="recent-proj1-img">
+				</a>
+			</div>
+		
+		</div>
+		
+		
+		<div class="recent-proj1-descrip">
+			<a href="page1.html" aria-label="Link to read more about the College Access Portal project">
+				<h4>College Access Portal</h4>
+			</a>
+			<h5>High School Internship at <a href="https://www.fjordnet.com/" target="_blank" aria-label="Link to Fjord's website, a company owned by Accenture">Fjord</a></h5>
+			<p>During my time at Fjord, part of Accenture Interactive, I designed a prototype of a college-access portal for college-bound individuals.</p>
         
             <a href="page1.html" class="design1link" aria-label="Link to read more about the College Access Hub Project">Read More</a>
-        </div>
-        
+		</div>
 
-    </div>
+		<div class="recent-proj2-container">
+			<div class="recent-proj2-img-container">
+				<a href="entr390-proj.html" aria-label="Link to read more about the Roommate Mobile Experience project">
+					<img src="images/SI390-Proj1-Pic.png" alt="Photo of project picture" class="recent-proj2-img">
+				</a>
+			</div>
+			
+		</div>
+
+		<div class="recent-proj2-descrip">
+			<a href="entr390-proj.html" aria-label="Link to read more about the Roommate Expereince Mobile Applicaiton">
+				<h4>Roommate Experience Mobile Application</h4>
+			</a>
+			<h5>Class Project (<a href="https://cfe.umich.edu/entr-390-012-digital-product-design/" target="_blank" aria-label="Link to course's description">ENTR390: Digital Product Design</a>)
+			</h5>
+			<p>
+				There are lots of incoming college students who have never had the experience to live in a shared room with strangers or friends. As a result, it is generally a good idea for college roommates to make agreements together that will outline their chores, rules, supplies so that the students could have a positive living experience. However, college roommates still need to be able to manage these agreements somehow and old each other accountable to them. Unfortunately, not everyone has a huge white board like my friend to track these shared-agreements with their roommates. Immediately, I recognized that there was a need - college roommates want something that will track their house/room chores and roommate responsibilities so that they can stay organized and establish ground rules of their living space.
+			</p>
+			<a href="entr390-proj.html" class="design1link" aria-label="Link to read more about the Roommate Experience Mobile Application project">Read More</a>
+		</div>
+
+	</div>
     <!-- End of my first project -->
 
     
