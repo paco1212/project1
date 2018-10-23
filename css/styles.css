@@ -1,11 +1,32 @@
+/* Changing Font to be a Google Font */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Changing background color of entire page */
 body {
-    background-color: #E0E4CC;
+    background-color: #d6d7d9;
+}
+
+/* CSS for Header portion */
+.header-wrapper {
+	display: grid;
+	width: 90%;
+	grid-template-columns: 1fr 1fr;
+	/* justify-items: center; */
+    align-items:center;
+    margin:0 auto;
+}
+/* CSS for logo in header */
+.header-logo img{
+	justify-self: start;
+	width:75px;
 }
 
 /* CSS for Navigation Bar */
 .nav-bar {
-    justify-self: end;
-    /* border:1px solid black; */
+	justify-self: end;
+	/* border:1px solid black; */
 
 }
 
@@ -33,35 +54,11 @@ nav a:hover {
     background-color:rgba(255, 167, 0, 1);
 }
 
-/* CSS for Header portion */
-.header-wrapper {
-    display: grid;
-    width: 90%;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items:center;
-}
-/* CSS for logo in header */
-.header-logo img{
-    /*justify-self: start;*/
-    width:75px;
-}
-
-.nav-logo {
-    height:100px;
-}
-
-/*************************************/
-/* CSS for Index page */
 .headshot {
     width:100%;
     margin:5px;
     border-radius: 25px 50px;
     border: 1px transparent;
-}
-
-* {
-    font-family: 'Roboto', sans-serif;
 }
 
 .flex-container-intro {
@@ -75,11 +72,11 @@ nav a:hover {
 .flex-intro-item {
     align-self: center;
     flex-grow: inherit;
-    background-color: #ffffff;
+    background-color: rgba(255,255,255,0.6);
     border-radius:25px;
     width: 60%;
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+    /* opacity: 0.6; */
+    /* filter: alpha(opacity=60); */
 }
 
 .intro-text{
@@ -87,8 +84,10 @@ nav a:hover {
     text-align: center;
 }
 
-.flex-headshot-item {
-    /* add here */
+.spacer {
+    width: 100vw;
+	height:75px;
+	border-top: outset;
 }
 
 .recent-projects-title {
@@ -124,17 +123,26 @@ nav a:hover {
     width:100%;
 }
 
-.recent-proj1-descrip {
+.recent-proj-descrip {
     /* border: 2px solid blue; */
     align-self: start;
 }
 
-.recent-proj1-descrip h4 {
+.recent-proj-descrip h4 {
     font-size: 24px;
 }
 
-.recent-proj1-descrip h5 {
+.recent-proj-descrip h5 {
     font-size: 18px;
+}
+
+.social-media-link{
+    /* Selector or style the colors of the links - I want them to remain the same color, regardless if it was visited or not */
+}
+
+.recent-projects-title {
+    text-align: center;
+    font-size: 36px;
 }
 
 
@@ -195,31 +203,12 @@ nav a:hover {
 /*************************************/
 /* CSS for Contact page */
 
-
-.form_contact {
-    width: 50%;
-}
-
 .pacoportrait{
     /* height: 400px; */
     width: 100%;
     border-style: solid;
     border-width: 1px;
     
-}
-
-.flex-container-contact {
-    display:flex;
-    justify-content: space-between;
-    width: 75%;
-}
-
- .flex-contact-item {
-    width:50%;
-} 
-.flex-contact-item img {
-    align-self: flex-end;
-    width: 90%
 }
 
 /************************************/
@@ -234,7 +223,7 @@ nav a:hover {
 }
 
 .entr390-article{
-    border:2px solid black;
+    /* border:2px solid black; */
     width:90vw;
     margin:0 auto;
 }
@@ -243,7 +232,14 @@ nav a:hover {
     grid-template-rows: repeat(4, 50px);
     /* justify-content: center; */
     grid-row-gap: 1em;
-    align-items: baseline
+    align-items: baseline;
+    background-image: url("../images/UX_icons.jpg");
+    background-position: bottom;
+    align-items: center;
+}
+
+.article-header h1, h2 {
+    text-align: center;
 }
 
 .article-intro {
@@ -254,7 +250,7 @@ nav a:hover {
     background-color: rgba(0, 253, 234, 0.2);
 }
 
-.article-intro > div {
+.article-intro div {
     box-sizing: border-box;
     align-self: center;
 }
@@ -266,21 +262,32 @@ nav a:hover {
     text-align: center;
 }
 
-
-
-.recent-proj2-container {
-    display: grid;
- 
-
-}
-.recent-proj2-img-container {
-    grid-column: 1/9;
-    background-color: rgba(107, 107, 107, 1);
-}
-.recent-proj2-img {
-    width:70%;
+.entr390-img1-container {
+    display:grid;
+    grid-template-columns: repeat(8,1fr);
     margin:0 auto;
+    padding:10px;
+}
 
+.entr390-inspiration-img {
+    grid-column: 2/8;
+    padding:5px;
+    border:1px solid rgba(0,0,0,1);
+    width:100%;
+    
+}
+
+.initial-wireframes {
+    display:grid;
+    grid-template-columns: repeat(3, auto);
+    grid-column-gap:1em;
+    justify-content: center;
+    justify-items: center;
+}
+
+.initial-wireframes img{
+    width:75%;
+    align-self: auto;
 }
 
 .design1link {
@@ -295,12 +302,33 @@ nav a:hover {
     right: 2vw; */
 }
 
-.recent-proj2-descrip h4 {
-    font-size: 24px;
+
+.recent-proj2-img-container {
+    grid-column: 1/9;
+    background-color: rgba(107, 107, 107, 1);
+}
+.recent-proj2-img {
+    width:70%;
+    margin:0 auto;
+
 }
 
-.recent-proj2-descrip h5 {
-    font-size: 18px;
+
+.contact-img {
+    width:300px;;
+    border:2px solid black;
+}
+.contact-message {
+    padding:10px;
+    margin:0 auto;
+    /* border:solid black; */
+    text-align: center;
+}
+
+@media only screen and (max-width:900px){
+    .main-grid img {
+        display:none;
+    }
 }
 
 .contact-title {
