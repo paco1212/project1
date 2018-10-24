@@ -78,8 +78,8 @@
 
 	ctx.fillText('Paco', 100, 350);
 
-	ctx.font = 'Bold 30px Times New Roman';
-	ctx.strokeText('JavaScript!', 300, 150);
+	ctx.font = 'Bold 30px Sans-serif';
+	ctx.fillText('JavaScript!', 300, 50);
 
 
 	function myFunction(){
@@ -93,8 +93,8 @@
             img.src = "images/" + x.files[0].name;
 			img.onload = function(){
 				ctx.drawImage(img, 25, 300);
-				ctx.font = 'Bold 30px Times';
-				ctx.fillText('Paco', 100, 350);
+				ctx.font = 'Italic 30px Helvetica Sans-serif';
+				ctx.strokeText('Paco', 100, 350);
       		}
       	}
       }
