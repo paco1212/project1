@@ -1,9 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
@@ -29,6 +31,9 @@
 		</div>
 	</div>
 
+	
+	
+
 	<div class="spacer">
 	</div>
 	<!-- Start of Intro -->
@@ -36,12 +41,12 @@
 
         <!-- My headshot -->
         <div class="flex-headshot-item">
-            <img src="images/PacoGallardo.jpg" alt="Picture of Francisco &#34;Paco&#34; Gallardo" class="headshot">
+			<div class ="headshot-container">
+				<img src="images/PacoGallardo.jpg" alt="Picture of Francisco &#34;Paco&#34; Gallardo" class="headshot">
+			</div>
+            
         </div>
-    
-        <!-- My inroduction of who I am and Link to resume(which is still missing) -->
-        <div class="flex-intro-item bg" title="Who I am">
-
+		<div class="flex-intro-item" title="Who I am">
             <div class="intro">
                 <h1 class="intro-text">Hi, I'm Francisco Gallardo, but my preferred name is Paco</h1>
                 <h2 class="intro-text">I am a rising UX Designer</h2>
@@ -64,58 +69,57 @@
 
 	<div class="recent-work-grid">
 		<div class="recent-proj-container">
-
-			<div class="recent-proj1-img-container">
+			<div class="recent-proj-img-container">
 				<a href="page1.html" aria-label="Link to read more about the College Access Hub Project">
-					<img src="images/College_hub_Prototype.png" alt="Picture of UX design project that Francisco has worked on in the past." class="recent-proj1-img">
-				</a>
-			</div>
-		
-		</div>
-		
-		
-		<div class="recent-proj-descrip">
-			<a href="page1.html" aria-label="Link to read more about the College Access Portal project">
-				<h4>College Access Portal</h4>
-			</a>
-			<h5>High School Internship at <a href="https://www.fjordnet.com/" target="_blank" aria-label="Link to Fjord's website, a company owned by Accenture">Fjord</a></h5>
-			<p>During my time at Fjord, part of Accenture Interactive, I designed a prototype of a college-access portal for college-bound individuals.</p>
-        
-            <a href="page1.html" class="design1link" aria-label="Link to read more about the College Access Hub Project">Read More</a>
-		</div>
-
-		<div class="recent-proj-container">
-			<div class="recent-proj2-img-container">
-				<a href="entr390-proj.html" aria-label="Link to read more about the Roommate Mobile Experience project">
-					<img src="images/SI390-Proj1-Pic.png" alt="Photo of project picture" class="recent-proj2-img">
+					<img src="images/College_hub_Prototype.png" alt="Picture of UX design project that Francisco has worked on in the past." class="recent-proj-img">
 				</a>
 			</div>
 			
-		</div>
+			<div class="recent-proj-descrip">
+				<div class="recent-proj-title">
+					<a href="page1.html" aria-label="Link to read more about the College Access Portal project">
+						<h4>College Access Portal</h4>
+					</a>
+					<h5 class="entr390-subheading">High School Internship at <a href="https://www.fjordnet.com/" target="_blank" aria-label="Link to Fjord's website, a company owned by Accenture">Fjord <i class="fas fa-external-link-alt" aria-label="External Link icon"></i></a></h5>
 
-		<div class="recent-proj-descrip">
-			<a href="entr390-proj.html" aria-label="Link to read more about the Roommate Expereince Mobile Applicaiton">
-				<h4>Roommate Experience Mobile Application</h4>
-			</a>
-			<h5>Class Project (<a href="https://cfe.umich.edu/entr-390-012-digital-product-design/" target="_blank" aria-label="Link to course's description">ENTR390: Digital Product Design</a>)
-			</h5>
-			<p>
-				There are lots of incoming college students who have never had the experience to live in a shared room with strangers or friends. As a result, it is generally a good idea for college roommates to make agreements together that will outline their chores, rules, supplies so that the students could have a positive living experience. However, college roommates still need to be able to manage these agreements somehow and old each other accountable to them. Unfortunately, not everyone has a huge white board like my friend to track these shared-agreements with their roommates. Immediately, I recognized that there was a need - college roommates want something that will track their house/room chores and roommate responsibilities so that they can stay organized and establish ground rules of their living space.
-			</p>
-			<a href="entr390-proj.html" class="design1link" aria-label="Link to read more about the Roommate Experience Mobile Application project">Read More</a>
-		</div>
+				</div>
+				<p>During my time at Fjord, part of Accenture Interactive, I designed a prototype of a college-access portal for college-bound individuals. The portal allows students to view financial award packages, application status, scholarship opportunities, and information about the colleges and universties.</p>
+				<div class="recent-project-links">
+					<a href="page1.html" class="design1link" aria-label="Link to read more about the College Access Hub Project">Read More</a>
 
-	</div>
-	<!-- End of my first project -->
+				</div>
+			</div>
+		
+		</div>
 	
 
-	<!-- <div class="wrapper-recent-proj">
-		<div class="recent-proj">
-			<a href="#Recent-Projects">Recent Projects</a>
+		<div class="recent-proj-container">
+			<div class="recent-proj-img-container entr-proj-img">
+				<a href="entr390-proj.html" aria-label="Link to read more about the Roommate Mobile Experience project">
+					<img src="images/entr390class.jpg" alt="Photo of project picture" class="recent-proj-img">
+				</a>
+			</div>
+				
+			<div class="recent-proj-descrip">
+				<div class="recent-proj-title">
+					<a href="entr390-proj.html" aria-label="Link to read more about the Roommate Expereince Mobile Applicaiton">
+						<h4>Roommate Experience Mobile Application</h4>
+					</a>
+					<h5 class="entr390-subheading">Class Project (<a href="https://cfe.umich.edu/entr-390-012-digital-product-design/" target="_blank" aria-label="Link to course's description">ENTR390: Digital Product Design <i class="fas fa-external-link-alt" aria-label="External Link icon"></i></a>)	
+				</div>
+				<p>
+					I created a prototype of a mobile application that allows college roommates the ability to keep a track of their chores, shared supplies, and agreements to improve college roommate experiences.
+				</p>					
+				<div class="recent-project-links">
+					<a href="entr390-proj.html" class="design1link" aria-label="Link to read more about the Roommate Experience Mobile Application project">Read More</a>
+				</div>
+			</div>
+			
 		</div>
-	</div> -->
-
-
+	</div>
+		
+		
+	
 
 
 </body>

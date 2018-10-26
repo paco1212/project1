@@ -75,6 +75,8 @@ nav a:hover {
     background-color: rgba(255,255,255,0.6);
     border-radius:25px;
     width: 60%;
+    height: 30%;
+    padding:5%;
     /* opacity: 0.6; */
     /* filter: alpha(opacity=60); */
 }
@@ -83,6 +85,14 @@ nav a:hover {
     color:#0D5EFD;
     text-align: center;
 }
+.intro h1 {
+    font-size: 36px;
+    padding:20px;
+}
+
+.intro h2 {
+    font-size: 24px;
+}
 
 .spacer {
     width: 100vw;
@@ -90,17 +100,66 @@ nav a:hover {
 	border-top: outset;
 }
 
-.recent-projects-title {
+.main-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+    width:90%;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    justify-content: space-evenly;
+}
+
+.contact-img {
+    width:300px;;
+    border:2px solid black;
+}
+.contact-message {
+    padding:10px;
+    margin:0 auto;
     text-align: center;
-    font-size: 36px;
+    font-size: 1.2em;
+    
+}
+
+.contact-title {
+    text-align: center;
+    width:75%;
+    margin:0 auto;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.contact-icons{
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom:20px;
+}
+.contact-icons a {
+    color:rgba(13, 94, 253, 1));
+}
+
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-width: -webkit-min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgba(0,0,0,1);
+    border-image: initial;
 }
 
 .recent-work-grid {
     display:grid;
-    width: 75%;
+    width: 80%;
     /* margin: 0 auto; */
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2, 43vh);
+    grid-template-columns: 1fr ;
+    grid-template-rows: 50% 50%;
     grid-column-gap: 1em;
     grid-row-gap: 1em; 
     /* border:1px solid; */
@@ -108,116 +167,65 @@ nav a:hover {
     margin: 0 auto;
 }
 
-.recent-proj1-container {
+
+.recent-proj-container {
     display: grid;
     /* border:1px solid; */
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap:1em;
+    padding-top: 5%
     /* grid-template-rows: repeat(2, 1fr); */
 }
 
 
-.recent-proj1-img-container {
+
+/* .recent-proj1-img-container {
     grid-column: 1/9;
-}
-.recent-proj1-img-container img {
-    width:100%;
+} */
+.recent-proj-img-container img {
+    width:90%;
+    border:2px solid rgba(0,0,0,1);
 }
 
 .recent-proj-descrip {
-    /* border: 2px solid blue; */
-    align-self: start;
+    display:grid;
+    grid-template-rows: repeat(3, auto);
+    grid-row-gap: 1em;
+    align-items: center;
 }
 
 .recent-proj-descrip h4 {
     font-size: 24px;
+    padding-bottom: 5%;
 }
 
 .recent-proj-descrip h5 {
     font-size: 18px;
 }
 
+/* .entr390-subheading {
+    padding-bottom: 10%;
+} */
+.recent-proj-descrip p {
+    align-self: start;
+}
+.recent-project-links {
+    align-self: start;
+    margin: 0 auto;
+}
+
 .social-media-link{
-    /* Selector or style the colors of the links - I want them to remain the same color, regardless if it was visited or not */
+/* Selector or style the colors of the links - I want them to remain the same color, regardless if it was visited or not */
 }
 
 .recent-projects-title {
+    padding-top:4%;
     text-align: center;
     font-size: 36px;
 }
 
 
-.flex-container-recentproj {
-    display:flex;
-    width:100%;
-    height: 10vh;
-    /* align-content: center; */
-    /* border: 2px solid; */
-    border-top: 1px solid grey;
-}
 
-.flex-header-item {
-    text-align: justify;
-    align-self: center;
-}
-
-
-
-.flex-project-item p {
-    width: 80%;
-    /* display: inline-block; */
-    margin: 4%;
-}
-
-/* span .flex-project-item{
-    align-self: auto;
-} */
-
-.design1link {
-    background-color: rgba(13, 94, 253, 1);
-    color: rgba(255,167, 0, 1); 
-    padding:10px;
-    /* width:50%; */
-    text-align: center;
-    margin: 4%;
-    /* align-self: flex-end; */
-    /* position: absolute;
-    right: 2vw; */
-}
-.project1pic {
-    width: 500px;
-    height: 400px;
-}
-
-/*************************************/
-/* CSS for Blog page */
-.vr_pic {
-    width:300px;
-}
-.coming_soon {
-    width: 500px;
-    height: 400px;
-    text-align: center;
-    font-size: 50px;
-}
-
-/*************************************/
-/* CSS for Contact page */
-
-.pacoportrait{
-    /* height: 400px; */
-    width: 100%;
-    border-style: solid;
-    border-width: 1px;
-    
-}
-
-/************************************/
-/* Projects Page CSS */
-.flex-container-projects {
-    display:flex;
-    
-}
-/* ENTR390 Page CSS */
 .entr390-container {
     /* background-color: #0D5EFD; */
 }
@@ -236,6 +244,7 @@ nav a:hover {
     background-image: url("../images/UX_icons.jpg");
     background-position: bottom;
     align-items: center;
+
 }
 
 .article-header h1, h2 {
@@ -253,6 +262,7 @@ nav a:hover {
 .article-intro div {
     box-sizing: border-box;
     align-self: center;
+
 }
 
 .article-intro > div > h3 {
@@ -261,7 +271,6 @@ nav a:hover {
 .article-intro > div > p {
     text-align: center;
 }
-
 .entr390-img1-container {
     display:grid;
     grid-template-columns: repeat(8,1fr);
@@ -296,62 +305,232 @@ nav a:hover {
     padding:10px;
     /* width:50%; */
     text-align: center;
-    /* margin: 4%; */
     /* align-self: flex-end; */
     /* position: absolute;
     right: 2vw; */
 }
 
-
-.recent-proj2-img-container {
-    grid-column: 1/9;
-    background-color: rgba(107, 107, 107, 1);
+.section-title {
+    font-size: 2em;
+    margin: 5px;
 }
-.recent-proj2-img {
-    width:70%;
-    margin:0 auto;
-
+.project1pic {
+    width: 500px;
+    height: 400px;
 }
 
-
-.contact-img {
-    width:300px;;
-    border:2px solid black;
+.flex-project-items h2 {
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    justify-self: flex-start;
 }
-.contact-message {
-    padding:10px;
-    margin:0 auto;
-    /* border:solid black; */
+
+/*************************************/
+/* CSS for Blog page */
+.vr_pic {
+    width:300px;
+}
+.coming_soon {
+    width: 500px;
+    height: 400px;
     text-align: center;
+    font-size: 50px;
+}
+
+/* MEDIA QUERY FOR MOBILE */
+@media only screen and (max-width: 600px) {
+
+    /* CSS FOR HEADER */
+    .flex-container-intro {
+        display: flex;
+        flex-direction:column;
+        background-image: url("../images/UX_icons.jpg");
+        background-size: cover;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+    
+    /* .flex-headsot-item {
+        w
+    } */
+    
+    
+    .flex-intro-item {
+        align-self: center;
+        flex-grow: inherit;
+        background-color: rgba(255,255,255,0.6);
+        border-radius:25px;
+        width: 60%;
+        height: 30%;
+        padding:5%;
+        order:2;
+        /* opacity: 0.6; */
+        /* filter: alpha(opacity=60); */
+    }
+
+    .flex-headshot-item {
+        /* display:flex;
+        justify-content: center; */
+        align-self: center;
+        flex-grow: inherit;
+        /* background-color: rgba(255,255,255,0.6); */
+        /* border-radius:25px; */
+        width: 60%;
+        /* height: 30%; */
+        /* padding:5%; */
+        order:1;
+        /* flex: 1; */
+        /* align-self: center; */
+        /* margin:0 auto; */
+    }
+    .headshot {
+        width:60%;
+        margin:0 auto;
+        border-radius: 25px 50px;
+        border: 1px transparent;
+    }
+    
+    .intro-text{
+        color:#0D5EFD;
+        text-align: center;
+    }
+    .intro h1 {
+        font-size: 36px;
+        padding:20px;
+    }
+    
+    .intro h2 {
+        font-size: 24px;
+    }
+
+
+    /* CSS FOR RECENT PROJECTS */
+    .recent-work-grid {
+        display: grid;
+        width: 85%;
+        grid-template-rows: repeat(2, 50vh);
+        grid-template-columns: 1fr;
+        grid-row-gap: 7vh;
+        margin: 0 auto;
+        padding: 5%
+    }
+    .recent-proj-container {
+        display:grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: 1fr;
+        grid-row-gap: 1em;
+    }
+
+    
+
+    .recent-proj-img-container {
+        display:grid;
+        justify-content: center;
+    }
+    .recent-proj-img-container a {
+        width:80%;
+        margin: 0 auto;
+    }
+
+    .recent-proj-descrip {
+        display:grid;
+        grid-template-rows: repeat(3, auto);
+        grid-row-gap: 1em;
+        /* border: 2px solid blue; */
+        /* align-self: start; */
+    }
+
+    .recent-proj-title {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-row-gap:1em;
+        text-align: center;
+    }
+    .recent-proj-descrip p {
+        text-align:center;
+    }
+
+    .recent-project-links{
+        margin: 0 auto;
+    }
+    .spacer {
+        height: 2vh;
+    }
+
+}
+
+/* MEDIA QUERY FOR DESKTOP */
+@media only screen and (min-width:900px){
+    .recent-work-grid {
+        display:grid;
+        width: 80%;
+        /* margin: 0 auto; */
+        grid-template-columns: 1fr 1fr;
+        /* grid-template-rows: 50% 50%; */
+        grid-column-gap: 1em;
+        /* grid-row-gap: 1em;  */
+        /* border:1px solid; */
+        /* align-self: center; */
+        margin: 0 auto;
+    }
+    
+    
+    .recent-proj-container {
+        display: grid;
+        /* border:1px solid; */
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap:1em;
+        padding-top: 5%
+        /* grid-template-rows: repeat(2, 1fr); */
+    }
+    
+    
+    
+    /* .recent-proj1-img-container {
+        grid-column: 1/9;
+    } */
+    .recent-proj-img-container img {
+        width:90%;
+        border:2px solid rgba(0,0,0,1);
+    }
+
+    .entr-proj-img {
+        width:auto;
+    }
+    
+    .recent-proj-descrip {
+        display:grid;
+        grid-template-rows: repeat(3, 30%);
+        align-items: center;
+        grid-row-gap: 1em;
+    }
+    
+    .recent-proj-descrip h4 {
+        font-size: 24px;
+        padding-bottom: 5%;
+    }
+    
+    .recent-proj-descrip h5 {
+        font-size: 18px;
+    }
+    .recent-proj-descrip p {
+        align-self: start;
+    }
+    .recent-project-links {
+        align-self: start;
+    }
+    /* .entr390-subheading {
+        padding-bottom: none;
+    } */
 }
 
 @media only screen and (max-width:900px){
     .main-grid img {
         display:none;
     }
-}
-
-.contact-title {
-    text-align: center;
-    width:75%;
-    margin:0 auto;
-}
-
-.contact-icons{
-    text-align: center;
-    margin: 0 auto;
-    padding-bottom:20px;
-}
-.contact-icons a {
-    color:rgba(13, 94, 253, 1));
-}
-
-.main-grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px;
-    width:90%;
-    margin: 0 auto;
-    grid-column-gap: 1em;
-    justify-content: space-evenly;
 }
