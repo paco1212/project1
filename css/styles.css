@@ -414,7 +414,7 @@ fieldset {
         width: 85%;
         grid-template-rows: repeat(2, 50vh);
         grid-template-columns: 1fr;
-        grid-row-gap: 7vh;
+        grid-row-gap: 7em;
         margin: 0 auto;
         padding: 5%
     }
