@@ -42,6 +42,8 @@ nav a {
     transition-duration: .001s;
     transition-timing-function: linear;
     transition-delay: 0.1s;
+    font-weight: bold;
+
 }
 /* When I hover over any of my nav bar links, change the background color to orange with a 0.3 opacity */
 nav a:hover {
@@ -92,8 +94,8 @@ nav a:hover {
 }
 
 .spacer {
-    width: 100vw;
-	height:75px;
+    width: 100%;
+	height:7vh;
 	border-top: outset;
 }
 
@@ -287,6 +289,8 @@ fieldset {
     color: rgba(255,167, 0, 1); 
     padding:10px;
     text-align: center;
+    font-weight: bold;
+    text-decoration: none;
 
 }
 
