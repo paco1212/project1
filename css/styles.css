@@ -434,6 +434,11 @@ fieldset {
     .recent-proj-img-container a {
         width:80%;
         margin: 0 auto;
+        text-align: center;
+    }
+
+    .recent-proj-img-container img {
+        width: 50%;
     }
 
     .recent-proj-descrip {
