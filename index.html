@@ -19,8 +19,21 @@
 
 		<div class="header-logo">
 			<a href="index.html" aria-label="Link to home page">
-				<img src="images/nl_color2.png" alt="Logo of Francisco. Logo is an F flipped 180degree horizontally and a G.">
+				<img src="images/nl_color2.png" alt="Logo of Francisco. Logo is an F flipped 180degree horizontally and a G." class="logo-icon">
 			</a>
+		</div>
+		<div class="mobile-nav-bar">
+			<!-- Top Navigation Menu -->
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars fa-2x"></i>
+			</a>
+			<nav class="topnav">
+				<a href="index.html" class="active" >Home</a>
+				<a href="projects.html" >Projects</a>
+				<a href="about_me.html" >About me</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		
 		</div>
 	
 		<div class="nav-bar">
@@ -31,7 +44,10 @@
 				<a href="contact.html" class="flex-nav-link" aria-label="Link to contact page">Contact</a>
 			</nav>  
 		</div>
-		</div>
+	</div>
+
+		<!-- Simulate a smartphone / tablet -->
+	
 		
 		<div class="spacer">
 	</div>
@@ -130,7 +146,34 @@
 			</div>
 		</div>
 	</main>
-		
+	
+	<script>
+		function myFunction() {
+			var mobileNavBar = document.querySelector(".topnav");
+			if (mobileNavBar.style.display === "block") {
+				mobileNavBar.style.display = "none";
+			}
+			else {
+				mobileNavBar.style.display = "block";
+			}
+			// var x = document.querySelectorAll("#myLinks");
+			// x.forEach(query => {
+			// 	if (query.style.display ==="block") {
+			// 		query.style.display = "none";
+			// 	}
+			// 	else {
+			// 		query.style.display = "block"
+			// 	}
+      		// // query.display = 'block';
+    		// });
+
+			// if (x.style.display === "block") {
+			// x.style.display = "none";
+			// } else {
+			// x.style.display = "block";
+			// }
+		}
+	</script>
 		
 	
 

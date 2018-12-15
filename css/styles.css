@@ -13,7 +13,7 @@ body {
     margin:0 auto;
 }
 /* CSS for logo in header */
-.header-logo img{
+.logo-icon{
 	justify-self: start;
 	width:75px;
 }
@@ -25,7 +25,7 @@ body {
 }
 
 /* Styling my nav bar added a transition so that the background changes color when you hover over it */
-nav a {
+.navigation a {
     /* width: 60px; */
     width:50%;
     text-align: center;
@@ -50,7 +50,12 @@ nav a:hover {
     text-decoration: none;
 }
 
-.active {
+.topnav a {
+    font-weight: bolder;
+    text-align: center
+}
+
+.navigation .active {
     /* background-color:rgba(255, 167, 0, 1); */
     color: rgba(255, 167, 0, 1);
 
@@ -106,7 +111,7 @@ textarea{
 
 .spacer {
     width: 100%;
-	height:7vh;
+	height:5vh;
 	border-top: outset;
 }
 
@@ -340,9 +345,316 @@ fieldset {
     text-align: center;
     font-size: 50px;
 }
+.mobile-nav-bar {
+    display:none;
+    justify-self: end;
+    /* position: relative; */
+
+}
+  
+  .topnav {
+    overflow: hidden;
+    position: relative;
+    display: none;
+  }
+  
+
+  
+  .topnav a {
+    /* color: rgba(13, 94, 253,1); */
+    color: rgba(13, 94, 253, 1);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 125%;
+    display: block;
+    right:125px;
+  }
+  .icon {
+      position: relative;
+  }
+  
+  .topnav a.icon {
+    background: rgba(13,92,253,1);
+    display: block;
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+  }
+  
+  .topnav a:hover {
+    color: rgba(13,92,253,1);
+    background-color: #FFF2D3;
+    text-decoration: underline;
+  }
+  
+  /* .active {
+    background-color: #4CAF50;
+    color: white;
+  } */
+
+
+/* CSS for ABOUT ME page */
+/* mobile first */
+ .tablet-aboutme-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 5%;
+    width: 90%;
+    margin:auto;
+} 
+.headshot-grid {
+    margin-left:auto;
+}
+
+.headshot-grid img{
+    display:block;
+    width: 70%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.name {
+    text-align:center;
+    font-size:150%;
+}
+
+.bio {
+    text-align:center;
+}
+
+.bio p{
+    padding:2%;
+}
+
+.mobile-grid {
+    /* display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 5%; */
+    width: 90%;
+    margin:auto;
+}
+
+
+.w3-container h1 {
+    font-size:150%;
+    padding:5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.about-me-headshot {
+    width: 100%;
+}
+
+.w3-container h2 {
+    font-size:100%;
+    padding:4%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+.bio {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-row-gap: 2%;
+    margin: 0 auto -142px;
+    width:90%;
+    font-size: 90%;
+}
+
+footer {
+    /* clear: both;
+    border: 1px groove #aaaaaa;
+    background: blue;
+    color: White;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    width: 100%; */
+    position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.about-me-main {
+    height: 185vh;
+}
+
+.w3-container p {
+    text-align:center;
+    padding: 2%;
+}
+.w3-container {
+    background: #fff;
+}
+
+.about-me-main h1 {
+    margin:0 auto;
+    font-size: 150%;
+    width: 100vw;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/* MEDIA QUERY FOR DESKTOP */
+@media only screen and (min-width:900px){
+
+    .desktop-aboutme-container {
+        display: block;
+    }
+    .desktop-aboutme-container {
+        display: grid;
+        width: 50vw;
+        margin: 0 auto;
+        grid-auto-rows: auto;
+        grid-row-gap: 5vh;
+    }
+    .headshot-card {
+        width: 70%;
+        margin: auto;
+    }
+    .w3-container h2 {
+        font-size: x-large;
+    }
+
+    .desktop-bio p {
+        padding: 2%;
+    }
+
+    .tablet-aboutme-grid {
+        display: none;
+    }
+    .recent-work-grid {
+        display:grid;
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 1em;
+        margin: 0 auto;
+    }
+    
+    
+    .recent-proj-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap:1em;
+        padding-top: 5%
+    }
+    
+    
+    
+    .recent-proj-img-container {
+        text-align: center;
+    }
+    .recent-proj-img-container img {
+        width:90%;
+        border:2px solid rgba(0,0,0,1);
+    }
+
+    .entr-proj-img {
+        width:auto;
+        margin:0
+    }
+    
+    .recent-proj-descrip {
+        display:grid;
+        grid-template-rows: repeat(3, 30%);
+        align-items: center;
+        grid-row-gap: 1em;
+    }
+    
+    .recent-proj-descrip h4 {
+        font-size: 24px;
+        padding-bottom: 5%;
+    }
+    
+    .recent-proj-descrip h5 {
+        font-size: 18px;
+    }
+    .recent-proj-descrip p {
+        align-self: start;
+    }
+    .recent-project-links {
+        align-self: start;
+    }
+    .mobile-about-me-grid {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:900px){
+    .spacer {
+        height: 2vh;
+    }
+    .main-grid img {
+        display:none;
+    }
+
+    .mobile-about-me-grid {
+        display: none;
+    }
+    .w3-white h2 {
+        padding: 4%;
+        font-size: x-large;
+    }
+
+
+    .bio-tablet-info {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-row-gap: 2%;
+        margin: 0 auto;
+        /* width:90%; */
+        /* font-size: 90%; */
+    }
+    .bio-tablet-info div h2 {
+        font-weight:bolder;
+    }
+    .bio-tablet-info-cards {
+        display: grid;
+        grid-template-rows: repeat(6, auto);
+        grid-row-gap: 2%;
+    }
+    .bio-tablet-info-cards div p {
+        padding: 2%;
+        font-size: 65%;
+    }
+    .bio-tablet-info-cards div p b {
+        color: rgba(13, 94, 253, 1);
+    }
+    .desktop-aboutme-container {
+        display: none;
+    }
+}
 
 /* MEDIA QUERY FOR MOBILE */
 @media only screen and (max-width: 600px) {
+
+    .desktop-aboutme-container {
+        display: none;
+    }
+
+    .mobile-nav-bar{
+        display: block;
+    }
+    .nav-bar {
+        display: none;
+    }
+
+    .tablet-aboutme-grid {
+        display:none;
+    }
+    .mobile-about-me-grid {
+        display: block;
+    }
+
 
     /* CSS FOR HEADER */
     .flex-container-intro {
@@ -449,169 +761,8 @@ fieldset {
     .spacer {
         height: 2vh;
     }
-
 }
 
-/* MEDIA QUERY FOR DESKTOP */
-@media only screen and (min-width:900px){
-    .recent-work-grid {
-        display:grid;
-        width: 80%;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 1em;
-        margin: 0 auto;
-    }
-    
-    
-    .recent-proj-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-row-gap:1em;
-        padding-top: 5%
-    }
-    
-    
-    
-    .recent-proj-img-container {
-        text-align: center;
-    }
-    .recent-proj-img-container img {
-        width:90%;
-        border:2px solid rgba(0,0,0,1);
-    }
-
-    .entr-proj-img {
-        width:auto;
-        margin:0
-    }
-    
-    .recent-proj-descrip {
-        display:grid;
-        grid-template-rows: repeat(3, 30%);
-        align-items: center;
-        grid-row-gap: 1em;
-    }
-    
-    .recent-proj-descrip h4 {
-        font-size: 24px;
-        padding-bottom: 5%;
-    }
-    
-    .recent-proj-descrip h5 {
-        font-size: 18px;
-    }
-    .recent-proj-descrip p {
-        align-self: start;
-    }
-    .recent-project-links {
-        align-self: start;
-    }
-}
-
-@media only screen and (max-width:900px){
-    .main-grid img {
-        display:none;
-    }
-}
-
-/* CSS for ABOUT ME page */
-/* mobile first */
-/* .aboutme-grid {
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-    grid-row-gap: 5%;
-    width: 90%;
-    margin:auto;
-} */
-/* .headshot-grid {
-    margin-left:auto;
-}
-
-.headshot-grid img{
-    display:block;
-    width: 70%;
-    margin-left:auto;
-    margin-right: auto;
-} */
-
-/* .name {
-    text-align:center;
-    font-size:150%;
-}
-
-.bio {
-    text-align:center;
-}
-
-.bio p{
-    padding:2%;
-} */
-
-.mobile-grid {
-    /* display: grid;
-    grid-template-rows: repeat(2, auto);
-    grid-row-gap: 5%; */
-    width: 90%;
-    margin:auto;
-}
-
-
-.w3-container h1 {
-    font-size:150%;
-    padding:5%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-}
-
-.about-me-headshot {
-    width: 100%;
-}
-
-.w3-container h2 {
-    font-size:100%;
-    padding:2%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-}
-.bio {
-    display: grid;
-    grid-template-rows: repeat(6, auto);
-    grid-row-gap: 2%;
-    margin: 0 auto -142px;
-    width:90%;
-}
-
-footer {
-    /* clear: both;
-    border: 1px groove #aaaaaa;
-    background: blue;
-    color: White;
-    padding: 0;
-    text-align: center;
-    vertical-align: middle;
-    line-height: normal;
-    margin: 0;
-    position: absolute;
-    bottom: 0px;
-    width: 100%; */
-    position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-}
-
-main {
-    height: 185vh;
-}
-
-.w3-container p {
-    text-align:center;
-    padding: 2%;
-}
-.w3-container {
-    background: #fff;
+.icon {
+    color:rgba(13, 94, 253, 1);
 }

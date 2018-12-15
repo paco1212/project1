@@ -20,8 +20,21 @@
 
             <div class="header-logo">
                 <a href="index.html" aria-label="Link to home page">
-                    <img src="images/nl_color2.png" alt="Logo of Francisco. Logo is an F flipped 180degree horizontally and a G.">
+                    <img src="images/nl_color2.png" alt="Logo of Francisco. Logo is an F flipped 180degree horizontally and a G." class="logo-icon">
                 </a>
+            </div>
+            <div class="mobile-nav-bar">
+                    <!-- Top Navigation Menu -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars fa-2x"></i>
+                </a>
+                <nav class="topnav">
+                    <a href="index.html" class="active" >Home</a>
+                    <a href="projects.html" >Projects</a>
+                    <a href="about_me.html" >About me</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            
             </div>
         
             <div class="nav-bar">
@@ -40,43 +53,85 @@
 
         
         <!-- Title of My blog -->
-        <main>
+        <main class="about-me-main">
+            <h1>About Me</h1>
 
-            <!-- image of guy wearing VR glasses -->
-            <!-- <img src="images/VR.jpg" alt="Picture of firgure wearing virtual reality headset and is reimagining the world." class="vr_pic"> -->
-            <!-- <div class="aboutme-grid">
-                <div class="headshot-grid">
-                    <img src="images/headshot-aboutme.png" alt="Picture of Me">
-                </div>
-                <div class="name">
-                    <h1><strong>I am Francisco "Paco" Gallardo</strong></h1>
-                </div>
-                <div class="bio">
-                    <p>I'm from CHICAGO, ILLINOIS.</p>
-
-                    <p>EDUCATION: I'm currently a senior at the <strong>University of Michigan — School of Information</strong>. I am pursuing a Bachelor's of Science in Information degree, with a concetration in User Experience Design.</p>
-                        
-                    <p>MISSION:I specialize in building pleasant and meaningful <strong>interactions</strong>. I love to design great User Experiences and make things accesible to <strong>ALL</strong></p>
-                        
-                    <p>CURRENT POSITION: I am currently a <bold>User Experience Analyst</bold> at The University of Michigan Information and Technology Services (ITS).</p>
-        
-                    <p>PAST POSITION: This past summer (2018), I was a User Experience Research Intern with my current at ITS.</p>
-        
-                    <p>I am currently seeking full-time employment opportunities and am looking to start after I graduate in the Spring of 2018.</p>
-
-                </div>
-            </div> -->
-
-            <div class="mobile-grid">
-                <div class="w3-card-4 w3-white">
+            <div class="desktop-aboutme-container">
+                <div class="headshot-card w3-card-4 w3-white">
                     <div class="w3-container w3-center">
-                        <h1>Francisco "Paco" Gallardo</h1>
+                        <h2>Francisco "Paco" Gallardo</h2>
                     </div>
                     <img src="images/headshot-aboutme.png" alt="Picture of Me" class="about-me-headshot">
                 </div>
 
+                <div class="desktop-bio">
+                    <p>
+                        <b>EDUCATION:</b> I'm currently a senior at the <strong>University of Michigan — School of Information</strong>. I am pursuing a <strong>Bachelor's of Science in Information</strong> degree, with a concetration in <strong>User Experience Design</strong>.
+                    </p>
+                    <p>
+                        <b>MISSION:</b> I specialize in building <strong>pleasant & meaningful interactions</strong>. I love to design great User Experiences and make things accesible to <strong>ALL</strong>.
+                    </p>
+                        
+                    <p>
+                        <b>CURRENT POSITION:</b> I am currently a User Experience Analyst at The University of Michigan Information and Technology Services (ITS).
+                    </p>
+                        
+                    <p>
+                        <b>PAST POSITION:</b> This past summer (2018), I was a User Experience Research Intern with my current team at ITS.
+                    </p>
+                    <p>
+                        I am currently seeking full-time employment opportunities and am looking to start after I graduate in the Spring of 2018.
+                    </p>    
+                        
+                        
+                </div>
             </div>
-            <div class="bio">
+
+            <div class="tablet-aboutme-grid">
+                <div class="headshot-grid">
+                    <img src="images/headshot-aboutme.png" alt="Picture of Me">
+                </div>
+                <div class="bio-tablet-info name">
+                    <div class="w3-card w3-white">
+                        <h2>Francisco "Paco" Gallardo</h2>
+                    </div>
+                    <div class="bio-tablet-info-cards">
+                        <div class="w3-card w3-center w3-white">
+                            <p>I'm from CHICAGO, ILLINOIS.</p>
+                        </div>
+                        <div class="w3-card w3-center w3-white">
+                            <p><b>EDUCATION:</b> I'm currently a senior at the <strong><a href="https://si.umich.edu/">University of Michigan — School of Information</a></strong>. I am pursuing a Bachelor's of Science in Information degree, with a concetration in User Experience Design.</p>
+                        </div>
+                            
+                        <div class="w3-card w3-center w3-white">
+                            <p><b>MISSION:</b> I specialize in building pleasant and meaningful <strong>interactions</strong>. I love to design great User Experiences and make things accesible to <strong>ALL</strong></p>
+                        </div>
+                        <div class="w3-card w3-center w3-white">    
+                            <p><b>CURRENT POSITION:</b> I am currently a <strong>User Experience Analyst</strong> at <a href="https://its.umich.edu/">The University of Michigan Information and Technology Services (ITS)</a>.</p>
+                        </div>
+                        <div class="w3-card w3-center w3-white">
+                            <p><b>PAST POSITION:</b> This past summer (2018), I was a User Experience Research Intern with my current team at ITS.</p>
+                        </div>
+                        <div class="w3-card w3-center w3-white">
+                            <p>I am currently seeking full-time employment opportunities and am looking to start after I graduate in the Spring of 2018.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="mobile-about-me-grid">
+
+                <div class="mobile-grid">
+                    <div class="w3-card-4 w3-white">
+                        <div class="w3-container w3-center">
+                            <h2>Francisco "Paco" Gallardo</h2>
+                        </div>
+                        <img src="images/headshot-aboutme.png" alt="Picture of Me" class="about-me-headshot">
+                    </div>
+
+                </div>
+                <div class="bio">
                     <div class="w3-card-4">
                         <header class="w3-container w3-orange">
                             <h2>Location</h2>
@@ -108,7 +163,7 @@
                             <h2>Current Position</h2>
                         </header>
                         <div class="w3-container">
-                            <p>I am currently a <bold>User Experience Analyst</bold> at The University of Michigan Information and Technology Services (ITS).</p>
+                            <p>I am currently a <b>User Experience Analyst</b> at The University of Michigan Information and Technology Services (ITS).</p>
                         </div>
                     </div>
 
@@ -131,17 +186,43 @@
                     </div>
 
                 </div>
-
-
             </div>
+
         </main>
         
         
 
 
-        <footer>
+        <!-- <footer>
             <p>© 2018 Francisco Gallardo</p>
-        </footer>
+        </footer> -->
+        <script>
+                function myFunction() {
+                    var mobileNavBar = document.querySelector(".topnav");
+                    if (mobileNavBar.style.display === "block") {
+                        mobileNavBar.style.display = "none";
+                    }
+                    else {
+                        mobileNavBar.style.display = "block";
+                    }
+                    // var x = document.querySelectorAll("#myLinks");
+                    // x.forEach(query => {
+                    // 	if (query.style.display ==="block") {
+                    // 		query.style.display = "none";
+                    // 	}
+                    // 	else {
+                    // 		query.style.display = "block"
+                    // 	}
+                      // // query.display = 'block';
+                    // });
+        
+                    // if (x.style.display === "block") {
+                    // x.style.display = "none";
+                    // } else {
+                    // x.style.display = "block";
+                    // }
+                }
+            </script>
 
     </body>
     <!-- End of body -->
