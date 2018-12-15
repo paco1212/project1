@@ -1,11 +1,7 @@
-/* Changing Font to be a Google Font */
-* {
-    font-family: 'Roboto', sans-serif;
-}
-
 /* Changing background color of entire page */
 body {
     background-color: #d6d7d9;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* CSS for Header portion */
@@ -30,14 +26,16 @@ body {
 
 /* Styling my nav bar added a transition so that the background changes color when you hover over it */
 nav a {
-    width: 60px;
+    /* width: 60px; */
+    width:50%;
     text-align: center;
-    background-color: rgba(0, 253, 234, 1);
+    font-size: 150%;
+    /* background-color: rgba(0, 253, 234, 1); */
     color: rgba(13, 94, 253, 1);
     text-decoration: none;
     padding: 10px;
-    margin: 5px;
-    display: inline-block;
+    /* margin: 5px; */
+    /* display: inline-block; */
     transition-property: color;
     transition-duration: .001s;
     transition-timing-function: linear;
@@ -47,11 +45,15 @@ nav a {
 }
 /* When I hover over any of my nav bar links, change the background color to orange with a 0.3 opacity */
 nav a:hover {
-    background-color: rgba(255,167, 0, 1);
+    /* color: rgba(255,167, 0, 1); */
+    color: rgba(255, 167, 0, 1);
+    text-decoration: none;
 }
 
 .active {
-    background-color:rgba(255, 167, 0, 1);
+    /* background-color:rgba(255, 167, 0, 1); */
+    color: rgba(255, 167, 0, 1);
+
 }
 
 .headshot {
@@ -59,6 +61,7 @@ nav a:hover {
     margin:5px;
     border-radius: 25px 50px;
     border: 1px transparent;
+
 }
 
 .flex-container-intro {
@@ -78,6 +81,14 @@ nav a:hover {
     width: 60%;
     height: 30%;
     padding:5%;
+    overflow: hidden;
+
+}
+
+textarea{
+    width:100%;
+    height:100%;
+    /* width:auto; */
 }
 
 .intro-text{
@@ -135,7 +146,7 @@ nav a:hover {
     padding-bottom:20px;
 }
 .contact-icons a {
-    color:rgba(13, 94, 253, 1));
+    color:rgba(13, 94, 253, 1);
 }
 
 fieldset {
@@ -168,7 +179,7 @@ fieldset {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap:1em;
-    padding-top: 5%
+    padding-top: 5%;
 }
 
 .recent-proj-img-container a {
@@ -289,9 +300,13 @@ fieldset {
     color: rgba(255,167, 0, 1); 
     padding:10px;
     text-align: center;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-decoration: none;
 
+}
+
+.company-link {
+    text-decoration: none;
 }
 
 .section-title {
@@ -316,7 +331,8 @@ fieldset {
 /*************************************/
 /* CSS for Blog page */
 .vr_pic {
-    width:300px;
+    /* width:300px; */
+    object-fit: contain;
 }
 .coming_soon {
     width: 500px;
@@ -359,7 +375,7 @@ fieldset {
         order:1;
     }
     .headshot {
-        width:60%;
+        /* width:60%; */
         margin:0 auto;
         border-radius: 25px 50px;
         border: 1px transparent;
@@ -497,4 +513,105 @@ fieldset {
     .main-grid img {
         display:none;
     }
+}
+
+/* CSS for ABOUT ME page */
+/* mobile first */
+/* .aboutme-grid {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 5%;
+    width: 90%;
+    margin:auto;
+} */
+/* .headshot-grid {
+    margin-left:auto;
+}
+
+.headshot-grid img{
+    display:block;
+    width: 70%;
+    margin-left:auto;
+    margin-right: auto;
+} */
+
+/* .name {
+    text-align:center;
+    font-size:150%;
+}
+
+.bio {
+    text-align:center;
+}
+
+.bio p{
+    padding:2%;
+} */
+
+.mobile-grid {
+    /* display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 5%; */
+    width: 90%;
+    margin:auto;
+}
+
+
+.w3-container h1 {
+    font-size:150%;
+    padding:5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.about-me-headshot {
+    width: 100%;
+}
+
+.w3-container h2 {
+    font-size:100%;
+    padding:2%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+.bio {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-row-gap: 2%;
+    margin: 0 auto -142px;
+    width:90%;
+}
+
+footer {
+    /* clear: both;
+    border: 1px groove #aaaaaa;
+    background: blue;
+    color: White;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+    margin: 0;
+    position: absolute;
+    bottom: 0px;
+    width: 100%; */
+    position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
+
+main {
+    height: 185vh;
+}
+
+.w3-container p {
+    text-align:center;
+    padding: 2%;
+}
+.w3-container {
+    background: #fff;
 }
