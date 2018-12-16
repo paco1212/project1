@@ -325,8 +325,7 @@ fieldset {
     margin: 5px;
 } */
 .project1pic {
-    width: 500px;
-    height: 400px;
+    width:100%;
 }
 
 .flex-project-items h2 {
@@ -453,6 +452,7 @@ fieldset {
     padding:4%;
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
+    line-height: 1.5;
 }
 .bio {
     display: grid;
@@ -463,27 +463,7 @@ fieldset {
     font-size: 90%;
 }
 
-footer {
-    /* clear: both;
-    border: 1px groove #aaaaaa;
-    background: blue;
-    color: White;
-    padding: 0;
-    text-align: center;
-    vertical-align: middle;
-    line-height: normal;
-    margin: 0;
-    position: absolute;
-    bottom: 0px;
-    width: 100%; */
-    position: fixed;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
-}
+ 
 
 .about-me-main {
     height: 185vh;
@@ -495,6 +475,27 @@ footer {
 }
 .w3-container {
     background: #fff;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-column-gap: 2em;
+    width:90vw;
+    margin:0 auto;
+}
+
+.grid-wrapper .project1 {
+    width:90%;
+    margin:0 auto;
+}
+
+.project-links{
+    color: rgba(13, 94, 253, 1);
+}
+
+.card-text {
+    line-height: 1.2;
 }
 
 /* MEDIA QUERY FOR DESKTOP */
@@ -649,6 +650,12 @@ footer {
 /* MEDIA QUERY FOR MOBILE */
 @media only screen and (max-width: 600px) {
 
+    .grid-wrapper {
+        grid-template-columns: none;
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 2em;
+    }
+
     .desktop-aboutme-container {
         display: none;
     }
@@ -778,3 +785,4 @@ footer {
 .icon {
     color:rgba(13, 94, 253, 1);
 }
+
