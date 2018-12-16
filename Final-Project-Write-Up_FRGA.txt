@@ -1,0 +1,20 @@
+
+Responsive Design choices:
+	I chose to to have three different layouts for my site: mobile, tablet, and desktop views. The mobile view is triggered when the screen size is 600px or below. The tablet view is triggered when the screen size is between 600px and 900px wide. The desktop view is triggered when the screen size exceeds 900px. when the tablet mode is on, most of the content on the pages appear to be before the "fold" so that users can quickly see everything. In the desktop view, most users expect to scroll on pages, so the content is more scattered accross the pages. Finally, in mobile views, the information is usually presented in a single column, with my content overflowing the "fold" to signal to the users to scroll down to view all the information. The mobile views is the only with a mobile navigation bar, as there wasn't ample space at the top of the screen to show all my links in a single row, along with my logo. To account for this, I have an icon to toggle the links of the navigation bar.
+
+Grid/Flexbox Use:
+	I used flexbox only once, on my landing page. I decided to use flexbox on my landing page because on that page, I have a cover photo of myself with an introduction. I decided to use flexbox in this case because I always want my photo and the text following that to be present. Flexbox is a two-dimensional layout and my landing page will always remain two-dimensional since the content will only chnage two times, once in mobile view and once in a non-mobile view (tablet or desktop). In the desktop view, the image and the text are side by side, whereas in the mobile view, the image and text are stacked above each other. 
+
+	I also used grid, and I used it in most of my pages, which are:
+		- index.html
+		- contact.html
+		- projects.html
+		- about-me.html
+		- entr390-proj.html (this page is not yet completed)
+	I used grid on my landing page (index.html) because I wanted the links to my projects to change depending on which device the page was being viewed on. For example, in a mobile view (when the screen size is less then 600px wide), all the content (images and text) is stacked on top of one another in one single column. In a tablet view (when the screen size is bewtween 600px and 900px wide), the content is also stacked on top of each other, but in two different columns. What I mean by that is that images appear on the left column, and the text appear on the right column, with the first project appearing in the first row, and the second project appearing on the second row. That is, I have a grid with 2 columns and 2 rows. I felt that grid was a much layout style that was more relevant to my design as it is a 3-dimensional layout style.
+
+	I also used grid on the contact page to style my image and contact form. I chose to use grid on this page because I had more knowledge on how to style grid as compared to my knowledge to flexbox. Additionally, I found grid to be a much more powerful because it gives the user much more freedom on how to style content on a page. As I mentioned before, flexbox is two-dimensional and that restricted me a lot from styling the content to appear exactly where I wanted it at on the page. This same reasoning about why I chose grid over flexbox can be applied to all my other page. Flexbox was extremely hard for me to understand and grasp!
+
+Use of JavaScript:
+	I used javascript only once on my sites. it can be found in all pages when the screen size is less then 600px, as it enables my mobile navigation bar. I modified this javscript and mobile navigation bar code from W3 Schools. Originally, I made many changes to the JavaScript to toggle my nav bar. However, the way I set up my navivagion bar was causing my pages to act in a weird way so then I changed my mobile navigation bar HTML elements and used the code from W3 Schools.
+
