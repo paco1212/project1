@@ -87,12 +87,14 @@ nav a:hover {
     background-size: cover;
     justify-content: space-evenly;
     align-content: space-evenly;
+    overflow: hidden;
+
 }
 
 .flex-intro-item {
     align-self: center;
     flex-grow: inherit;
-    background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.7);
     border-radius:25px;
     width: 60%;
     height: 30%;
@@ -497,6 +499,10 @@ fieldset {
 .card-text {
     line-height: 1.2;
 }
+.card-text a {
+    color: rgba(13, 94, 253, 1);
+    font-weight: bold;
+}
 
 /* MEDIA QUERY FOR DESKTOP */
 @media only screen and (min-width:900px){
@@ -527,6 +533,11 @@ fieldset {
     .desktop-bio p {
         padding: 2%;
         text-align: center
+    }
+    .desktop-bio p a{
+        text-decoration: underline;
+        color: #0244c9;
+        font-weight: bolder;
     }
 
     .tablet-aboutme-grid {
@@ -786,3 +797,8 @@ fieldset {
     color:rgba(13, 94, 253, 1);
 }
 
+.um-link{
+    text-decoration: underline;
+    font-weight: bolder;
+    color: #0244c9;
+}
