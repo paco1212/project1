@@ -154,7 +154,7 @@ textarea{
     font-size: 2em;
     font-weight: bold;
     padding-top:1%;
-    padding-bottom:1%
+    padding-bottom:2%
 }
 
 .contact-icons{
@@ -308,7 +308,7 @@ fieldset {
 
 .design1link {
     background-color: rgba(13, 94, 253, 1);
-    color: rgba(255,167, 0, 1); 
+    color: #FFF2D3; 
     padding:10px;
     text-align: center;
     /* font-weight: bold; */
