@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" type="text/css" href="css/default.css">
-	
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
@@ -24,10 +23,11 @@
 		</div>
 		<div class="mobile-nav-bar">
 			<!-- Top Navigation Menu -->
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<a href="javascript:void(0);" class="icon" onclick="activateNavBar()">
 					<i class="fa fa-bars fa-2x"></i>
 			</a>
 			<nav class="topnav">
+				<a href="#Recent-Projects" class="skip-to-main">Skip to main content</a>
 				<a href="index.html" class="active" >Home</a>
 				<a href="projects.html" >Projects</a>
 				<a href="about_me.html" >About me</a>
@@ -38,22 +38,18 @@
 	
 		<div class="nav-bar">
 			<nav class="navigation">
+				<a href="#Recent-Projects" class="skip-to-main">Skip to main content</a>
 				<a href="index.html" class="flex-nav-link active" aria-label="Link to home page">Home</a>
 				<a href="projects.html" class="flex-nav-link" aria-label="Link to Projects page">Projects</a>
 				<a href="about_me.html" class="flex-nav-link" aria-label="link to About Me page">About Me</a>
 				<a href="contact.html" class="flex-nav-link" aria-label="Link to contact page">Contact</a>
 			</nav>  
 		</div>
-	</div>
-
-		<!-- Simulate a smartphone / tablet -->
-	
+	</div>	
 		
-		<div class="spacer">
+	<div class="spacer">
 	</div>
-	
-	<span class="title-container"></span>
-	
+		
 	<!-- Start of Intro -->
 	<div class="flex-container-intro" aria-label="header" role="banner">
 
@@ -73,19 +69,11 @@
         
 	</div>
 	<!-- End of introduction -->
-	<!-- Creting a link that will scroll user to view my recent projects -->
-	<div class="wrapper-recent-proj">
-		<div class="recent-proj">
-			<a href="#Recent-Projects">Recent Projects</a>
-		</div>
-	</div>
-	<div class="spacer2">
-	</div>
 
 	<main class="main-content" aria-label="main_content">
 
 		<!-- Beginning of my first project -->
-		<h3 class="recent-projects-title" id="Recent-Projects">Recent Projects</h3>
+		<h3 class="page-title" id="Recent-Projects">Recent Projects</h3>
 
 		<div class="recent-work-grid">
 			<div class="recent-proj-container">
@@ -148,7 +136,7 @@
 	</main>
 	
 	<script>
-		function myFunction() {
+		function activateNavBar() {
 			var mobileNavBar = document.querySelector(".topnav");
 			if (mobileNavBar.style.display === "block") {
 				mobileNavBar.style.display = "none";
@@ -156,22 +144,7 @@
 			else {
 				mobileNavBar.style.display = "block";
 			}
-			// var x = document.querySelectorAll("#myLinks");
-			// x.forEach(query => {
-			// 	if (query.style.display ==="block") {
-			// 		query.style.display = "none";
-			// 	}
-			// 	else {
-			// 		query.style.display = "block"
-			// 	}
-      		// // query.display = 'block';
-    		// });
-
-			// if (x.style.display === "block") {
-			// x.style.display = "none";
-			// } else {
-			// x.style.display = "block";
-			// }
+			
 		}
 	</script>
 		

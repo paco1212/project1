@@ -8,7 +8,7 @@ body {
 .header-wrapper {
 	display: grid;
 	width: 90%;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(2, auto);
     align-items:center;
     margin:0 auto;
 }
@@ -17,12 +17,26 @@ body {
 	justify-self: start;
 	width:75px;
 }
-
 /* CSS for Navigation Bar */
 .nav-bar {
 	justify-self: end;
 
 }
+
+.skip-to-main {
+    left: -9999px   ;
+    position: absolute;
+    overflow:hidden;
+    z-index: -999;
+}
+
+.skip-to-main:focus {
+    position:relative;
+    left:0;      
+
+
+}
+
 
 /* Styling my nav bar added a transition so that the background changes color when you hover over it */
 .navigation a {
@@ -34,20 +48,15 @@ body {
     color: rgba(13, 94, 253, 1);
     text-decoration: none;
     padding: 10px;
-    /* margin: 5px; */
-    /* display: inline-block; */
-    transition-property: color;
-    transition-duration: .001s;
-    transition-timing-function: linear;
-    transition-delay: 0.1s;
-    font-weight: bold;
 
 }
 /* When I hover over any of my nav bar links, change the background color to orange with a 0.3 opacity */
 nav a:hover {
     /* color: rgba(255,167, 0, 1); */
-    color: rgba(255, 167, 0, 1);
-    text-decoration: none;
+    /* color: rgba(13, 94, 253, 0.7); */
+    background-color: #FFF2D3;
+    text-decoration: underline;
+
 }
 
 .topnav a {
@@ -57,7 +66,9 @@ nav a:hover {
 
 .navigation .active {
     /* background-color:rgba(255, 167, 0, 1); */
-    color: rgba(255, 167, 0, 1);
+    /* color: rgba(255, 167, 0, 1); */
+    background-color: #FFF2D3;
+    text-decoration: underline;
 
 }
 
@@ -117,8 +128,7 @@ textarea{
 
 .main-grid {
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 300px;
+    grid-template-columns: repeat(2, auto);
     width:90%;
     margin: 0 auto;
     grid-column-gap: 1em;
@@ -137,12 +147,14 @@ textarea{
     
 }
 
-.contact-title {
+.page-title {
     text-align: center;
-    width:75%;
+    width:100vw;
     margin:0 auto;
     font-size: 2em;
     font-weight: bold;
+    padding-top:1%;
+    padding-bottom:1%
 }
 
 .contact-icons{
@@ -227,12 +239,6 @@ fieldset {
 /* Selector or style the colors of the links - I want them to remain the same color, regardless if it was visited or not */
 }
 
-.recent-projects-title {
-    padding-top:4%;
-    text-align: center;
-    font-size: 36px;
-}
-
 .entr390-article{
     width:90vw;
     margin:0 auto;
@@ -314,10 +320,10 @@ fieldset {
     text-decoration: none;
 }
 
-.section-title {
+/* .section-title {
     font-size: 2em;
     margin: 5px;
-}
+} */
 .project1pic {
     width: 500px;
     height: 400px;
@@ -339,12 +345,7 @@ fieldset {
     /* width:300px; */
     object-fit: contain;
 }
-.coming_soon {
-    width: 500px;
-    height: 400px;
-    text-align: center;
-    font-size: 50px;
-}
+
 .mobile-nav-bar {
     display:none;
     justify-self: end;
@@ -387,10 +388,11 @@ fieldset {
     text-decoration: underline;
   }
   
-  /* .active {
-    background-color: #4CAF50;
-    color: white;
-  } */
+  .topnav .active {
+    background-color: #FFF2D3;
+    color: rgba(13, 94, 253, 1);
+    text-decoration: underline;
+  }
 
 
 /* CSS for ABOUT ME page */
@@ -495,16 +497,13 @@ footer {
     background: #fff;
 }
 
-.about-me-main h1 {
-    margin:0 auto;
-    font-size: 150%;
-    width: 100vw;
-    text-align: center;
-    padding-bottom: 10px;
-}
-
 /* MEDIA QUERY FOR DESKTOP */
 @media only screen and (min-width:900px){
+
+    .contact-img-container {
+        grid-row-start:0;
+    }
+    
 
     .desktop-aboutme-container {
         display: block;
@@ -526,6 +525,7 @@ footer {
 
     .desktop-bio p {
         padding: 2%;
+        text-align: center
     }
 
     .tablet-aboutme-grid {
@@ -593,9 +593,21 @@ footer {
     .spacer {
         height: 2vh;
     }
-    .main-grid img {
-        display:none;
+
+    .main-grid {
+        display: grid;
+        grid-template-rows: repeat(2, auto);
+        grid-template-columns: none;
+        grid-row-gap: 2em;
+
     }
+    .contact-img-container {
+        grid-row-start: 2;
+    }
+
+    /* .main-grid img {
+        display:none;
+    } */
 
     .mobile-about-me-grid {
         display: none;

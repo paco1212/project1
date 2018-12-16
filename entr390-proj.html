@@ -16,12 +16,27 @@
 
         <div class="header-logo">
             <a href="index.html" aria-label="Link to home page">
-                <img src="images/nl_color2.png" alt="Logo of Francisco. Logo is an F flipped 180degree horizontally and a G." class="logo">
+                <img src="images/nl_color2.png" alt="Logo of Francisco. Logo is an F flipped 180degree horizontally and a G." class="logo-icon">
             </a>
         </div>
+        <div class="mobile-nav-bar">
+			<!-- Top Navigation Menu -->
+			<a href="javascript:void(0);" class="icon" onclick="activateNavBar()">
+					<i class="fa fa-bars fa-2x"></i>
+			</a>
+			<nav class="topnav">
+                <a href="#main" class="skip-to-main">Skip to main content</a>
+				<a href="index.html" >Home</a>
+				<a href="projects.html" class="active" >Projects</a>
+				<a href="about_me.html" >About me</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		
+		</div> 
     
             <div class="nav-bar">
                 <nav class="navigation">
+                    <a href="#main" class="skip-to-main">Skip to main content</a>
                     <a href="index.html" class="flex-nav-link" aria-label="Link to home page">Home</a>
                     <a href="projects.html" class="flex-nav-link active" aria-label="Link to Projects page">Projects</a>
                     <a href="about_me.html" class="flex-nav-link" aria-label="link to About Me page">About Me</a>
@@ -85,6 +100,18 @@
                 </article>
             </div>
         </main>
+        <script>
+            function activateNavBar() {
+                var mobileNavBar = document.querySelector(".topnav");
+                if (mobileNavBar.style.display === "block") {
+                    mobileNavBar.style.display = "none";
+                }
+                else {
+                    mobileNavBar.style.display = "block";
+                }
+                
+            }
+        </script>
     
 </body>
 </html>

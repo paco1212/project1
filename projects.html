@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Projects</title>
-    <link rel="stylesheet" type="text/css" href="css/default.css">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="shortcut icon" href="images/nl_color2.png">
     <link rel = "shortcut icon" href="images/nl_color2.png">
 </head>
 <body>
@@ -15,17 +16,32 @@
     <div class="header-wrapper" role="navigation">
 
         <div class="header-logo">
-            <a href="index.html" aria-label="Link to home page">
-                <img src="images/nl_color2.png" alt="Logo of Francisco. Logo is an F flipped 180degree horizontally and a G.">
+            <a href="index.html" aria-label="Link to home page" tabindex="1">
+                <img src="images/nl_color2.png" alt="Logo of Francisco. Logo is an F flipped 180degree horizontally and a G." class="logo-icon">
             </a>
         </div>
+        <div class="mobile-nav-bar">
+			<!-- Top Navigation Menu -->
+			<a href="javascript:void(0);" class="icon" onclick="activateNavBar()">
+					<i class="fa fa-bars fa-2x"></i>
+			</a>
+			<nav class="topnav">
+                <a href="#Previous-work" class="skip-to-main" tabindex="0">Skip to main content</a>
+				<a href="index.html">Home</a>
+				<a href="projects.html" class="active" >Projects</a>
+				<a href="about_me.html" >About me</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+		
+		</div> 
     
             <div class="nav-bar">
                 <nav class="navigation">
-                    <a href="index.html" class="flex-nav-link" aria-label="Link to home page">Home</a>
-                    <a href="projects.html" class="flex-nav-link active" aria-label="Link to Projects page">Projects</a>
-                    <a href="about_me.html" class="flex-nav-link" aria-label="link to About Me page">About Me</a>
-                    <a href="contact.html" class="flex-nav-link" aria-label="Link to contact page">Contact</a>
+                    <a href="#Previous-work" class="skip-to-main" tabindex="0">Skip to main content</a>
+                    <a href="index.html" class="flex-nav-link" aria-label="Link to home page" tabindex="0">Home</a>
+                    <a href="projects.html" class="flex-nav-link active" aria-label="Link to Projects page" tabindex="0">Projects</a>
+                    <a href="about_me.html" class="flex-nav-link" aria-label="link to About Me page" tabindex="0">About Me</a>
+                    <a href="contact.html" class="flex-nav-link" aria-label="Link to contact page" tabindex="0">Contact</a>
                 </nav>  
             </div>
         </div>
@@ -38,24 +54,34 @@
     
         
         <div class="section-title">
-            <h1>My Previous Projects</h1>
+            <h1 tabindex="0" id="Previous-work" class="page-title">My Previous Projects</h1>
         </div>
 
         <div class="flex-container-projects">
 
             <div class="flex-project-items"> 
-                <h2><a href="page1.html">College Access Portal for High School Seniors</a></h2>
+                <h2 tabindex="0"><a href="page1.html" tabindex="0">College Access Portal for High School Seniors</a></h2>
 
                 <div>
-                    <a href="page1.html"><img src="images/College_hub_Prototype.png" alt="Picture of UX design project that Francisco has worked on in the past." class="project1pic"></a>
+                    <a href="page1.html"tabindex="0"><img src="images/College_hub_Prototype.png" alt="Picture of UX design project that Francisco has worked on in the past." class="project1pic" tabindex="0"></a>
                 </div>
             </div>
         </div>
 
-        <span class="coming_soon">
-            <em>More content to come soon.</em>
-        </span>
+        
     </main>
+    <script>
+		function activateNavBar() {
+			var mobileNavBar = document.querySelector(".topnav");
+			if (mobileNavBar.style.display === "block") {
+				mobileNavBar.style.display = "none";
+			}
+			else {
+				mobileNavBar.style.display = "block";
+			}
+			
+		}
+	</script>
 
 </body>
 </html>

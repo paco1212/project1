@@ -16,14 +16,30 @@
 <body>
     <div class="header-wrapper" role="navigation">
 
-    <div class="header-logo">
-        <a href="index.html" aria-label="Link to home page">
-            <img src="images/nl_color2.png" alt="Logo of Francisco. Logo is an F flipped 180degree horizontally and a G.">
-        </a>
-    </div>
+        <div class="header-logo">
+            <a href="index.html" aria-label="Link to home page">
+                <img src="images/nl_color2.png" alt="Logo of Francisco. Logo is an F flipped 180degree horizontally and a G." class="logo-icon">
+            </a>
+        </div> 
+
+        <div class="mobile-nav-bar">
+			<!-- Top Navigation Menu -->
+			<a href="javascript:void(0);" class="icon" onclick="activateNavBar()">
+					<i class="fa fa-bars fa-2x"></i>
+			</a>
+			<nav class="topnav">
+                <a href="#ContactMe" class="skip-to-main">Skip to main content</a>
+				<a href="index.html" >Home</a>
+				<a href="projects.html" >Projects</a>
+				<a href="about_me.html" >About me</a>
+				<a href="contact.html" class="active" >Contact</a>
+			</nav>
+		
+		</div> 
 
         <div class="nav-bar">
             <nav class="navigation">
+                <a href="#ContactMe" class="skip-to-main">Skip to main content</a>
                 <a href="index.html" class="flex-nav-link" aria-label="Link to home page">Home</a>
                 <a href="projects.html" class="flex-nav-link" aria-label="Link to Projects page">Projects</a>
                 <a href="about_me.html" class="flex-nav-link" aria-label="link to About Me page">About Me</a>
@@ -38,10 +54,15 @@
         
     </span>
     
-    <main>
-        <h1 class="contact-title">Contact Me</h1>
+    <main id="ContactMe">
+        <h1 class="page-title" id="ContactMe" tabindex="0">Contact Me</h1>
 
         <div class="contact-icons">
+            <p>
+                Thank you for visiting my site! I am always looking to expand my network and looking to collaborate with others!<br>
+                If you would like to work with me or want to chat, please contact me by filling out the for below!<br>
+                I am currently looking for full-time employment in the field of UX and hope to start in the summer of 2018. 
+            </p>
             <p class="contact-message">Be sure to be on the following platforms:</p>
             <a href="http://www.linkedin.com/pub/francisco-gallardo/a5/230/312/" class="social-media-link" target="_blank" rel="noreferrer" aria-label="Link to LinkedIn account">
                 <i class="fab fa-linkedin fa-2x" aria-label="Icon of LinkedIn"></i>
@@ -114,6 +135,18 @@
             </div>
         </div>
     </main>
+    <script>
+		function activateNavBar() {
+			var mobileNavBar = document.querySelector(".topnav");
+			if (mobileNavBar.style.display === "block") {
+				mobileNavBar.style.display = "none";
+			}
+			else {
+				mobileNavBar.style.display = "block";
+			}
+			
+		}
+	</script>
 
 </body>
 </html>
